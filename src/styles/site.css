@@ -121,3 +121,36 @@
 .gallery[data-lightbox] a {
   cursor: zoom-in;
 }
+
+/* Long unbreakable text (an e-mail address in a narrow column) wraps instead of widening the page. */
+.elementor-icon-box-description,
+.elementor-icon-box-title,
+.ast-builder-html-element p {
+  overflow-wrap: anywhere;
+}
+/* A column's inner box never grows wider than its column (a long word used to stretch it). */
+.elementor-column > .elementor-widget-wrap {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Touch screens: small icon links get a finger-sized hit area (44px) without changing their size,
+   so nothing on the page moves. */
+@media (pointer: coarse) {
+  .ast-footer-social-wrap .ast-builder-social-element,
+  .elementor-icon-box-icon a,
+  .elementor-icon-box-title a {
+    position: relative;
+  }
+  .ast-footer-social-wrap .ast-builder-social-element::after,
+  .elementor-icon-box-icon a::after,
+  .elementor-icon-box-title a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max(100%, 44px);
+    height: max(100%, 44px);
+    transform: translate(-50%, -50%);
+  }
+}

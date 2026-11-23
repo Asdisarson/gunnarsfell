@@ -1,8 +1,9 @@
 // Layout comparison between the WordPress front end and the static build.
 // Measures position, size, font and colours of every Elementor element, heading, link, form field and
-// footer block on both sites and prints what differs. Screenshots land in reference/shots/.
+// footer block on both sites and prints what differs. Which image file a browser picks is not compared:
+// the new site serves smaller files and WebP on purpose. Screenshots land in reference/shots/.
 // Usage: node scripts/compare.mjs [path ...]      (defaults to one page per template)
-//   OLD=http://localhost:10009 NEW=http://localhost:4321 WIDTHS=1440,1024,768,375
+//   OLD=http://localhost:10009 NEW=http://localhost:4321 WIDTHS=1440,1024,768,375 TOUCH=1
 import { mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
@@ -10,6 +11,7 @@ import { chromium } from 'playwright';
 const OLD = process.env.OLD ?? 'http://localhost:10009';
 const NEW = process.env.NEW ?? 'http://localhost:4321';
 const WIDTHS = (process.env.WIDTHS ?? '1440,1024,768,375').split(',').map(Number);
+const TOUCH = process.env.TOUCH === '1'; // Emulate a touch device, where the finger-sized targets apply.
 const TOLERANCE = Number(process.env.TOLERANCE ?? 1); // px
 const SHOTS = fileURLToPath(new URL('../reference/shots/', import.meta.url));
 const paths = process.argv.slice(2).length
@@ -50,14 +52,13 @@ function measure() {
       cs.fontFamily.split(',')[0].replace(/"/g, ''),
       cs.fontWeight,
       cs.backgroundColor.replace(/ /g, ''),
-      (el.tagName === 'IMG' ? el.currentSrc.replace(/^https?:\/\/[^/]+/, '') : '') || '-',
     ].join('|');
   }
   return out;
 }
 
 async function capture(browser, origin, path, width, label) {
-  const page = await browser.newPage({ viewport: { width, height: 900 } });
+  const page = await browser.newPage({ viewport: { width, height: 900 }, hasTouch: TOUCH, isMobile: TOUCH });
   await page.goto(origin + path, { waitUntil: 'networkidle' });
   // Sliders autoplay; freeze them on the first slide so both sides are measured in the same state.
   await page.evaluate(async () => {

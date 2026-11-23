@@ -1,8 +1,8 @@
 // Copies the WordPress uploads the site uses into public/wp-content/uploads, at the same paths,
 // so image URLs stay what they were. Runs before every build; only fetches what is missing.
 // Usage: node scripts/sync-media.mjs
-import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
-import { dirname, join } from 'node:path';
+import { mkdir, readdir, readFile, rename, stat, writeFile } from 'node:fs/promises';
+import { dirname, join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnv } from 'vite';
 
@@ -19,8 +19,29 @@ async function filesUnder(dir) {
   return nested.flat();
 }
 
+const UPLOADS_DIR = resolve(ROOT, 'public/wp-content/uploads') + sep;
+/** Where an upload path is stored locally, or null when it would land outside the uploads folder. */
+const localFile = (path) => {
+  const target = resolve(join(ROOT, 'public', path));
+  return target.startsWith(UPLOADS_DIR) ? target : null;
+};
+/** Decodes a path found in content; null when it is malformed or tries to climb out of uploads. */
+const safePath = (encoded) => {
+  try {
+    const path = decodeURI(encoded);
+    return localFile(path) ? path : null;
+  } catch {
+    return null;
+  }
+};
+
 const paths = new Set();
-const collect = (text) => (text.match(UPLOAD) ?? []).forEach((p) => paths.add(decodeURI(p)));
+const add = (encoded) => {
+  const path = safePath(encoded);
+  if (path) paths.add(path);
+  else console.warn(`  skipped an upload path that is malformed or outside uploads: ${encoded}`);
+};
+const collect = (text) => (text.match(UPLOAD) ?? []).forEach(add);
 
 // 1. Everything the templates and stylesheets reference.
 for (const file of [...(await filesUnder(join(ROOT, 'src'))), ...(await filesUnder(join(ROOT, 'public/assets')))]) {
@@ -32,39 +53,55 @@ const response = await fetch(`${WP}/wp-json/gunnarsfell/v1/content`);
 if (!response.ok) throw new Error(`WordPress content request failed: ${response.status}`);
 const uploadPath = (url) => {
   const at = url.indexOf('/wp-content/uploads/');
-  return at === -1 ? null : decodeURI(url.slice(at));
+  return at === -1 ? null : url.slice(at);
 };
 (function walk(value, key) {
   if (typeof value === 'string') {
     // A srcset is "url 300w, url 1024w": the width descriptor is what separates the entries.
     const urls = key === 'srcset' ? value.split(/\s+\d+w(?:,\s*|$)/).filter(Boolean) : [value];
-    urls.map(uploadPath).forEach((path) => path && paths.add(path));
+    urls.map(uploadPath).forEach((path) => path && add(path));
   } else if (value && typeof value === 'object') {
     Object.entries(value).forEach(([k, v]) => walk(v, k));
   }
 })(await response.json());
 
 let copied = 0;
+let webpCopied = 0;
 const missing = [];
 const queue = [...paths];
+const exists = (file) => stat(file).then(Boolean, () => false);
+const save = async (file, response) => {
+  await mkdir(dirname(file), { recursive: true });
+  // Written under a temporary name first: an interrupted run must not leave half a file that the
+  // next run takes for a finished copy.
+  await writeFile(`${file}.part`, Buffer.from(await response.arrayBuffer()));
+  await rename(`${file}.part`, file);
+};
+
+async function copy(path) {
+  const target = localFile(path);
+  if (!(await exists(target))) {
+    const original = await fetch(WP + encodeURI(path));
+    if (!original.ok) return missing.push(path);
+    await save(target, original);
+    copied++;
+  }
+  // WordPress (Imagify) keeps a WebP next to most images; scripts/optimize-html.mjs offers it to browsers.
+  if (!/\.(jpe?g|png)$/i.test(path) || (await exists(`${target}.webp`))) return;
+  const webp = await fetch(`${WP}${encodeURI(path)}.webp`);
+  if (webp.ok && webp.headers.get('content-type')?.includes('image/webp')) {
+    await save(`${target}.webp`, webp);
+    webpCopied++;
+  }
+}
+
 await Promise.all(
   Array.from({ length: 8 }, async () => {
-    for (let path = queue.pop(); path; path = queue.pop()) {
-      const target = join(ROOT, 'public', path);
-      if (await stat(target).catch(() => null)) continue;
-      const file = await fetch(WP + encodeURI(path));
-      if (!file.ok) {
-        missing.push(path);
-        continue;
-      }
-      await mkdir(dirname(target), { recursive: true });
-      await writeFile(target, Buffer.from(await file.arrayBuffer()));
-      copied++;
-    }
+    for (let path = queue.pop(); path; path = queue.pop()) await copy(path);
   }),
 );
 
-console.log(`media: ${paths.size} referenced, ${copied} copied, ${missing.length} missing`);
+console.log(`media: ${paths.size} referenced, ${copied} copied, ${webpCopied} WebP copied, ${missing.length} missing`);
 if (missing.length) {
   // Building on would publish pages with broken images.
   console.error(missing.map((p) => `  missing on WordPress: ${p}`).join('\n'));

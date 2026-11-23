@@ -1,7 +1,5 @@
 // Browser behaviour that the WordPress theme and Elementor scripts used to provide:
 // mobile menu, testimonial sliders, gallery lightbox and the contact forms.
-import Swiper from 'swiper';
-import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 /* Mobile menu (off-canvas drawer) --------------------------------------- */
 
@@ -40,8 +38,15 @@ interface CarouselSettings {
   space_between?: { size?: number };
 }
 
-function initCarousels() {
-  document.querySelectorAll<HTMLElement>('.elementor-widget-testimonial-carousel').forEach((widget) => {
+async function initCarousels() {
+  const widgets = document.querySelectorAll<HTMLElement>('.elementor-widget-testimonial-carousel');
+  if (!widgets.length) return;
+  // Only pages with a slider download the slider library.
+  const [{ default: Swiper }, { A11y, Autoplay, Navigation, Pagination }] = await Promise.all([
+    import('swiper'),
+    import('swiper/modules'),
+  ]);
+  widgets.forEach((widget) => {
     const el = widget.querySelector<HTMLElement>('.swiper');
     if (!el || el.querySelectorAll('.swiper-slide').length < 2) return;
     // The settings Elementor stored for this widget.
@@ -192,6 +197,6 @@ function initForms() {
 }
 
 initMobileMenu();
-initCarousels();
 initLightbox();
 initForms();
+initCarousels().catch((error) => console.error('Slider failed to start', error));

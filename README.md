@@ -8,7 +8,7 @@ Static Astro site. WordPress (in `../app/public`) is the content admin only: pro
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Dev server on http://localhost:4321 (WordPress must be running) |
-| `npm run build` | Copies the images the site uses from WordPress, then builds to `dist/` |
+| `npm run build` | Copies the images (and their WebP versions) from WordPress, builds to `dist/`, then optimizes every page |
 | `npm run preview` | Serves `dist/` |
 | `npm test` | Unit tests (SEO head, content mapping, sitemaps) |
 | `npm run seo-diff` | Compares every built page's head with the old site's (`reference/seo-baseline.json`) |
@@ -33,6 +33,12 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
   Sitemaps keep Yoast's file names (`sitemap_index.xml`, `page-`, `verk-`, `umsogn-sitemap.xml`).
 - **Images:** served from `/wp-content/uploads/...`, the same URLs as before. `scripts/sync-media.mjs` copies
   the referenced files into `public/wp-content/` (not in git).
+- **Page optimization:** `scripts/optimize-html.mjs` runs last in the build (rules and tests in
+  `scripts/lib/optimize-html.mjs`): WebP offered through `<picture>`, images loaded lazily unless a
+  template marks them eager (the first content image and the first row of a grid or gallery), descriptions added to images that sit in a card with one heading. The dev server does not run it.
+- **Image `sizes`:** the page templates carry measured `sizes` values. After changing a page's layout, run
+  `node scripts/fix-sizes.mjs` against the dev server to re-measure them. The project grid and gallery set
+  theirs in `src/components/ProjectGrid.astro` and `ProjectGallery.astro`.
 - **Browser behaviour:** `src/scripts/site.ts` (mobile menu, testimonial slider, gallery lightbox, forms).
 
 ## Parity with the old site

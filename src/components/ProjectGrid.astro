@@ -7,6 +7,12 @@ const { verk } = await getContent();
 // Tiles are cropped to this height/width ratio (the old grid's setting). A photo that is wider than
 // the tile fills its height; a taller one fills its width. Elementor decided this in the browser.
 const TILE_RATIO = 1.2;
+
+/** How wide a photo is drawn in its tile: a wide photo overflows the tile sideways to fill its height. */
+const sizesFor = (width: number, height: number) => {
+  const overflow = Math.max(1, (TILE_RATIO * width) / height);
+  return `(max-width: 767px) ${Math.ceil(96 * overflow)}vw, (max-width: 1024px) ${Math.ceil(49 * overflow)}vw, ${Math.ceil(290 * overflow)}px`;
+};
 ---
 
 <div class="elementor-portfolio elementor-grid elementor-posts-container elementor-has-item-ratio" role="list">
@@ -31,15 +37,15 @@ const TILE_RATIO = 1.2;
             {image && large && (
               <img
                 fetchpriority={i === 0 ? 'high' : undefined}
-                loading={i < 4 ? undefined : 'lazy'}
+                loading={i < 4 ? 'eager' : 'lazy'}
                 decoding="async"
                 width={large.width}
                 height={large.height}
                 src={large.url}
                 class={`attachment-large size-large wp-image-${image.id}`}
-                alt={image.alt}
+                alt={image.alt || project.title}
                 srcset={image.srcset || undefined}
-                sizes={`(max-width: ${large.width}px) 100vw, ${large.width}px`}
+                sizes={sizesFor(large.width, large.height)}
               />
             )}
           </div>
