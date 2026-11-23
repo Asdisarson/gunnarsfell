@@ -11,9 +11,11 @@ interface Props {
   eager?: boolean;
   /** Heading level for the title, where the tile is an item in a list of projects. */
   heading?: 'h2' | 'h3';
+  /** A line over the title, such as "Næsta verk". */
+  label?: string;
 }
 
-const { project, sizes, eager = false, heading } = Astro.props;
+const { project, sizes, eager = false, heading, label } = Astro.props;
 // A project saved without a cover photo shows its first photo, if it has any.
 const image = project.image ?? project.gallery[0];
 const shown = image?.sizes.large ?? image;
@@ -35,6 +37,7 @@ const Title = heading ?? 'span';
     />
   )}
   <span class="gf-tile__caption">
+    {label && <span class="gf-tile__label">{label}</span>}
     <Title class="gf-tile__title">{project.title}</Title>
     {project.gallery.length > 0 && <span class="gf-tile__count">{photoCount(project.gallery.length)}</span>}
   </span>

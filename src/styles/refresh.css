@@ -837,12 +837,9 @@ body .gf-main .gallery img {
     gap: 10px;
   }
 }
-/* The way back to the list. */
+/* The optional description above a project's photos. */
 .gf-main .gf-project-description {
   margin-bottom: 32px;
-}
-.gf-main .elementor-image-gallery + .gf-link {
-  margin-top: 24px;
 }
 
 @media (min-width: 600px) {
@@ -965,4 +962,71 @@ body .gf-main .gallery img {
   align-items: center;
   gap: 12px 28px;
   margin-top: 28px;
+}
+
+/* Project page: the way back above the title, the photo count under it, and the neighbouring projects
+   at the end. */
+.gf-main .gf-crumb {
+  display: inline-block;
+  padding-block: 8px;
+  color: #8fe3bd;
+  font-family: var(--gf-display);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+.gf-main .gf-crumb:hover {
+  color: var(--gf-white);
+}
+.gf-main .gf-pagehead__meta {
+  margin-top: 12px;
+  color: #d5ddd8;
+}
+.gf-section--tight {
+  padding-block: clamp(20px, 3vw, 40px) var(--gf-space);
+}
+.gf-next {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  background: var(--gf-forest);
+}
+.gf-next .gf-tile {
+  aspect-ratio: 16 / 9;
+}
+.gf-next .gf-tile__caption {
+  padding: 72px var(--gf-gutter) 22px;
+}
+.gf-tile__label {
+  color: #8fe3bd;
+  font-size: 15px;
+  font-weight: 500;
+}
+.gf-next .gf-tile__title {
+  font-size: clamp(22px, 2.6vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 768px) {
+  .gf-next {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gf-next .gf-tile {
+    aspect-ratio: 16 / 8;
+  }
+  .gf-next .gf-all {
+    grid-column: 1 / -1;
+  }
+  /* A lone neighbour (a site with two projects) takes the full width. */
+  .gf-next .gf-tile:first-child:nth-last-child(2) {
+    grid-column: 1 / -1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* The caption lift on hover, from this tile's own (deeper) resting padding. */
+  .gf-next .gf-tile:hover .gf-tile__caption,
+  .gf-next .gf-tile:focus-visible .gf-tile__caption {
+    padding-bottom: 30px;
+  }
 }

@@ -4,20 +4,42 @@ import Base from '../../layouts/Base.astro';
 import ContactSection from '../../components/ContactSection.astro';
 import PageHead from '../../components/PageHead.astro';
 import ProjectGallery from '../../components/ProjectGallery.astro';
-import Reasons from '../../components/Reasons.astro';
+import ProjectTile from '../../components/ProjectTile.astro';
+import { photoCount } from '../../lib/projects';
 import { getContent, type Project } from '../../lib/wp';
 import { BODY_CLASS, projectDescription } from '../../site';
 
 export async function getStaticPaths() {
   const { verk } = await getContent();
-  return verk.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+  // The list is a loop: the last project leads on to the first. A project without photos is passed over.
+  const hasPhoto = (p: Project) => Boolean(p.image ?? p.gallery[0]);
+  const at = (from: number, step: 1 | -1) => {
+    for (let n = 1; n <= verk.length; n++) {
+      const candidate = verk[(from + step * n + verk.length * n) % verk.length];
+      if (hasPhoto(candidate)) return candidate;
+    }
+    return verk[from];
+  };
+  return verk.map((project, i) => ({
+    params: { slug: project.slug },
+    props: { project, previous: at(i, -1), next: at(i, 1) },
+  }));
 }
 
 interface Props {
   project: Project;
+  previous: Project;
+  next: Project;
 }
 
-const { project } = Astro.props;
+const { project, previous, next } = Astro.props;
+const neighbours =
+  previous.id === next.id
+    ? [{ project: next, label: 'Næsta verk' }]
+    : [
+        { project: previous, label: 'Fyrra verk' },
+        { project: next, label: 'Næsta verk' },
+      ];
 ---
 
 <Base
@@ -28,16 +50,27 @@ const { project } = Astro.props;
   bodyClass={`gf-page single-verk postid-${project.id} ${BODY_CLASS}`}
 >
   <main id="main" class="gf-main">
-    <PageHead title={project.title} image={project.image ?? project.gallery[0]} projectId={project.id} />
-    <section class="gf-section">
+    <PageHead title={project.title} image={project.image ?? project.gallery[0]} projectId={project.id}>
+      <a slot="above" class="gf-crumb" href="/unnin-verk/">
+        Unnin verk
+      </a>
+      {project.gallery.length > 0 && <p class="gf-pagehead__meta">{photoCount(project.gallery.length)}</p>}
+    </PageHead>
+    <section class="gf-section gf-section--tight">
       <div class="gf-wrap">
         <ProjectGallery project={project} />
-        <a class="gf-link" href="/unnin-verk/">
-          Öll verkin
-        </a>
       </div>
     </section>
-    <Reasons />
+    {neighbours.some((n) => n.project.id !== project.id) && (
+      <nav class="gf-next" aria-label="Fleiri verk">
+        {neighbours.map((n) => (
+          <ProjectTile project={n.project} label={n.label} sizes="(max-width: 767px) 100vw, 50vw" />
+        ))}
+        <a class="gf-all" href="/unnin-verk/">
+          Skoða öll verkin
+        </a>
+      </nav>
+    )}
     <ContactSection />
   </main>
 </Base>

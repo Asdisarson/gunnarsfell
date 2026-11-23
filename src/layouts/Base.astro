@@ -82,6 +82,18 @@ const pixel = import.meta.env.PUBLIC_FB_PIXEL_ID;
       fbq('init', pixel);
       fbq('track', 'PageView');
     </script>}
+    <script is:inline>
+      // Clicking on to another page before a page transition has finished cancels it. That is harmless,
+      // but the browser reports it as an error unless the cancellation is acknowledged here.
+      ['pageswap', 'pagereveal'].forEach(function (type) {
+        window.addEventListener(type, function (event) {
+          var transition = event.viewTransition;
+          if (!transition) return;
+          transition.ready.catch(function () {});
+          transition.finished.catch(function () {});
+        });
+      });
+    </script>
   </head>
   <body class={bodyClass} itemtype="https://schema.org/WebPage" itemscope>
     <script is:inline>

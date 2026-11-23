@@ -1,6 +1,6 @@
 ---
 // The dark green band that opens every page except the home page: the page title, and for a
-// project its cover photo behind it.
+// project its cover photo behind it. Content passed in sits under the title; the "above" slot sits over it.
 import type { WpImage } from '../lib/wp';
 
 interface Props {
@@ -32,6 +32,8 @@ const { title, image, projectId } = Astro.props;
     />
   )}
   <div class="gf-wrap">
+    <slot name="above" />
     <h1>{title}</h1>
+    <slot />
   </div>
 </header>
