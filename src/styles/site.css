@@ -36,14 +36,6 @@
   text-align: center;
 }
 
-.gf-404-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  margin-top: 2em;
-}
-
 /* Gallery lightbox. */
 .gf-lightbox {
   width: 100vw;
@@ -123,28 +115,17 @@
 }
 
 /* Long unbreakable text (an e-mail address in a narrow column) wraps instead of widening the page. */
-.elementor-icon-box-description,
-.elementor-icon-box-title,
 .ast-builder-html-element p {
   overflow-wrap: anywhere;
-}
-/* A column's inner box never grows wider than its column (a long word used to stretch it). */
-.elementor-column > .elementor-widget-wrap {
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* Touch screens: small icon links get a finger-sized hit area (44px) without changing their size,
    so nothing on the page moves. */
 @media (pointer: coarse) {
-  .ast-footer-social-wrap .ast-builder-social-element,
-  .elementor-icon-box-icon a,
-  .elementor-icon-box-title a {
+  .ast-footer-social-wrap .ast-builder-social-element {
     position: relative;
   }
-  .ast-footer-social-wrap .ast-builder-social-element::after,
-  .elementor-icon-box-icon a::after,
-  .elementor-icon-box-title a::after {
+  .ast-footer-social-wrap .ast-builder-social-element::after {
     content: '';
     position: absolute;
     top: 50%;

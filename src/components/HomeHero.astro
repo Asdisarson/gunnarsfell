@@ -1,0 +1,75 @@
+---
+// Home page opening: one finished project at a time, full width, behind the introduction.
+// src/scripts/site.ts changes the photo; without scripts the first project simply stays.
+import type { Project } from '../lib/wp';
+import { COMPANY } from '../site';
+
+interface Props {
+  /** Projects to show, each with a cover photo. The first one is on screen when the page opens. */
+  projects: Project[];
+}
+
+const { projects } = Astro.props;
+---
+
+<section class="gf-hero" aria-labelledby="gf-hero-title" data-hero>
+  <div class="gf-hero__slides" aria-hidden="true">
+    {projects.map((project, i) => {
+      const image = project.image!;
+      return (
+        // Later photos stay out of the page (hidden) until the first one has loaded.
+        <div class:list={['gf-hero__slide', i === 0 && 'is-active']} hidden={i > 0} data-hero-slide>
+          <img
+            src={image.url}
+            srcset={image.srcset || undefined}
+            sizes="(max-width: 767px) 250vw, 100vw"
+            width={image.width}
+            height={image.height}
+            alt=""
+            loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : undefined}
+            decoding="async"
+          />
+        </div>
+      );
+    })}
+  </div>
+
+  <div class="gf-hero__intro">
+    <h1 id="gf-hero-title">Allt á einum stað</h1>
+    <p>
+      Við búum yfir víðtækri reynslu og höfum yfir að ráða fjölda frábærra iðnaðarmanna sem kemur sér einstaklega vel
+      fyrir öll þau fjölbreyttu verk sem Gunnarsfell tekur að sér.
+    </p>
+    <div class="gf-actions">
+      <a class="gf-button" href="#fa-tilbod">
+        Fá tilboð
+      </a>
+      <a class="gf-button gf-button--quiet" href={COMPANY.tel}>
+        Hringja í 546 4466
+      </a>
+    </div>
+  </div>
+
+  <div class="gf-hero__bar">
+    <p class="gf-hero__now">
+      {projects.map((project, i) => (
+        <a href={project.path} hidden={i > 0} data-hero-link>
+          <span class="gf-hero__title">{project.title}</span>
+          <span class="gf-hero__more">Skoða verkið</span>
+        </a>
+      ))}
+    </p>
+    {projects.length > 1 && (
+      // Shown by the script, which is what makes them work.
+      <div class="gf-hero__controls" hidden data-hero-controls>
+        <button type="button" data-hero-prev aria-label="Fyrra verk">
+          ‹
+        </button>
+        <button type="button" data-hero-next aria-label="Næsta verk">
+          ›
+        </button>
+      </div>
+    )}
+  </div>
+</section>

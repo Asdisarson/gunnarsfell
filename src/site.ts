@@ -22,6 +22,8 @@ export const COMPANY = {
   kennitala: '451207 - 0160',
   email: 'gunnarsfell@gunnarsfell.is',
   phone: '+(354) 546-4466',
+  /** The same number as a link target. */
+  tel: 'tel:+3545464466',
   facebook: 'https://www.facebook.com/Gunnarsfell',
 };
 
@@ -32,3 +34,7 @@ export const FALLBACK_DESCRIPTIONS: Record<string, string> = {
 
 export const projectDescription = (title: string, description: string) =>
   description.trim() || `${title} – myndir af verki sem Gunnarsfell ehf vann.`;
+
+/** Body classes the carried-over theme CSS needs for the header, footer and forms. */
+export const BODY_CLASS =
+  'page wp-custom-logo wp-theme-astra ast-page-builder-template ast-no-sidebar ast-single-post ast-hfb-header ast-full-width-layout elementor-default elementor-kit-8';

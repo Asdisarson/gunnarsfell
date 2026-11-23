@@ -1,0 +1,22 @@
+---
+// "Why choose us": the same three reasons wherever the section is shown.
+const reasons = [
+  { title: 'Reynsla', text: 'Við höfum víðtæka reynslu og erum í samstarfi við marga iðnaðarmenn' },
+  { title: 'Vinnubrögð', text: 'Við leggjum mikla áherslu á vönduð vinnubrögð og umgengi á vinnustað' },
+  { title: 'Gæða efni', text: 'Við notum eingöngu viðkennd efni sem tryggja hámarksendingu og gæði' },
+];
+---
+
+<section class="gf-section gf-section--forest" aria-labelledby="gf-reasons-title">
+  <div class="gf-wrap">
+    <h2 id="gf-reasons-title">Af hverju að velja okkur?</h2>
+    <ul class="gf-reasons">
+      {reasons.map((reason) => (
+        <li>
+          <h3>{reason.title}</h3>
+          <p>{reason.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

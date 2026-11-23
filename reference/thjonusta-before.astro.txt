@@ -1,0 +1,709 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import TestimonialSlides from '../components/TestimonialSlides.astro';
+---
+
+<Base
+  path="/thjonusta/"
+  type="page"
+  bodyClass="wp-singular page-template-default page page-id-1049 wp-custom-logo wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-page-builder-template ast-no-sidebar astra-4.11.7 ast-single-post ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky elementor-default elementor-kit-8 elementor-page elementor-page-1049 astra-addon-4.11.2"
+>
+  <div class="ast-container">
+    <div id="primary" class="content-area primary">
+      <main id="main" class="site-main">
+        <article
+          class="post-1049 page type-page status-publish ast-article-single"
+          id="post-1049"
+          itemtype="https://schema.org/CreativeWork"
+          itemscope="itemscope"
+        >
+          <header class="entry-header ast-no-title ast-header-without-markup"></header>
+          <div class="entry-content clear" itemprop="text">
+            <div
+              data-elementor-type="wp-page"
+              data-elementor-id="1049"
+              class="elementor elementor-1049"
+              data-elementor-post-type="page"
+            >
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-623ea53 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="623ea53"
+                data-element_type="section"
+                data-settings='&#123;"background_background":"classic"&#125;'
+              >
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-no">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-21ddeff"
+                    data-id="21ddeff"
+                    data-element_type="column"
+                  >
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div
+                        class="elementor-element elementor-element-a09d3bc elementor-widget elementor-widget-heading"
+                        data-id="a09d3bc"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h1 class="elementor-heading-title elementor-size-default">Þjónusta</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-e6eecd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="e6eecd6"
+                data-element_type="section"
+                data-settings='&#123;"background_background":"classic"&#125;'
+              >
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-no">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-75764c5"
+                    data-id="75764c5"
+                    data-element_type="column"
+                  >
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div
+                        class="elementor-element elementor-element-a3030da elementor-widget elementor-widget-heading"
+                        data-id="a3030da"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h6 class="elementor-heading-title elementor-size-default">Okkar þjónusta</h6>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-1dbc89b elementor-widget elementor-widget-heading"
+                        data-id="1dbc89b"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h2 class="elementor-heading-title elementor-size-default">Treystu reynslunni</h2>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-24b722c elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="24b722c"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                fetchpriority="high"
+                                decoding="async"
+                                width="721"
+                                height="721"
+                                src="/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg"
+                                class="attachment-full size-full wp-image-10253"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg 721w, /wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1-150x150.jpg 150w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Viðhald og endurnýjun</h4>
+                              <p class="elementor-image-box-description">
+                                Tökum að okkur almennt viðhald fasteigna, s.s. breytingar innan- og utandyra.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-cd7a0c6 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="cd7a0c6"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                decoding="async"
+                                width="1536"
+                                height="1536"
+                                src="/wp-content/uploads/2023/10/Malningarvinna-1.jpeg"
+                                class="attachment-full size-full wp-image-10155"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Malningarvinna-1.jpeg 1536w, /wp-content/uploads/2023/10/Malningarvinna-1-300x300.jpeg 300w, /wp-content/uploads/2023/10/Malningarvinna-1-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Malningarvinna-1-150x150.jpeg 150w, /wp-content/uploads/2023/10/Malningarvinna-1-768x768.jpeg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Málningarvinna</h4>
+                              <p class="elementor-image-box-description">
+                                Innimálun og útimálun, lökkun, sprautun og spartlvinna.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-ff6dc9f elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="ff6dc9f"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1536"
+                                height="1536"
+                                src="/wp-content/uploads/2023/10/Flisalogn.jpeg"
+                                class="attachment-full size-full wp-image-10168"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Flisalogn.jpeg 1536w, /wp-content/uploads/2023/10/Flisalogn-300x300.jpeg 300w, /wp-content/uploads/2023/10/Flisalogn-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Flisalogn-150x150.jpeg 150w, /wp-content/uploads/2023/10/Flisalogn-768x768.jpeg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Flísalögn</h4>
+                              <p class="elementor-image-box-description">
+                                Leggjum flísar á baðherbergi, veggi og gólf erum með mjög sérhæfða aðila sem skilar
+                                frábærri og vandaðari vinnu.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-1ee8e7c elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="1ee8e7c"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1532"
+                                height="1536"
+                                src="/wp-content/uploads/2023/10/Uppsetning-innrettinga.jpeg"
+                                class="attachment-full size-full wp-image-10280"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Uppsetning-innrettinga.jpeg 1532w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-300x300.jpeg 300w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-1021x1024.jpeg 1021w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-150x150.jpeg 150w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-768x770.jpeg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Uppsetning á innréttingum</h4>
+                              <p class="elementor-image-box-description">
+                                Setjum upp eldhúsinnréttingar, fataskápa, getum látið sérsmíða innréttingar og margt
+                                fleira.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-e92f356 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="e92f356"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1536"
+                                height="1536"
+                                src="/wp-content/uploads/2023/10/Almenn-Gardvinna.jpg"
+                                class="attachment-full size-full wp-image-10251"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Almenn-Gardvinna.jpg 1536w, /wp-content/uploads/2023/10/Almenn-Gardvinna-300x300.jpg 300w, /wp-content/uploads/2023/10/Almenn-Gardvinna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Almenn-Gardvinna-150x150.jpg 150w, /wp-content/uploads/2023/10/Almenn-Gardvinna-768x768.jpg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Almenn garðvinna og hellulögn</h4>
+                              <p class="elementor-image-box-description">
+                                Tökum að okkur almenna garðvinnu ásamt helluglögn ofl.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-b9529bc elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="b9529bc"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1200"
+                                height="1200"
+                                src="/wp-content/uploads/2023/10/THakvidgerdir-1.jpg"
+                                class="attachment-full size-full wp-image-10180"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/THakvidgerdir-1.jpg 1200w, /wp-content/uploads/2023/10/THakvidgerdir-1-300x300.jpg 300w, /wp-content/uploads/2023/10/THakvidgerdir-1-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/THakvidgerdir-1-150x150.jpg 150w, /wp-content/uploads/2023/10/THakvidgerdir-1-768x768.jpg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Þakviðgerðir</h4>
+                              <p class="elementor-image-box-description">
+                                Þakpappalögn, lekaviðgerðir, endurnýjun á þaki, flasningar og bárujárn.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-56af1c9 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="56af1c9"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="757"
+                                height="757"
+                                src="/wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1.jpg"
+                                class="attachment-full size-full wp-image-10156"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1.jpg 757w, /wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1-150x150.jpg 150w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Pallasmíði og skjólveggir</h4>
+                              <p class="elementor-image-box-description">
+                                Sólpallur, grindverk og skjólveggir, smáhýsi og fleira.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-8b7e06b elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="8b7e06b"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1536"
+                                height="1536"
+                                src="/wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2.jpeg"
+                                class="attachment-full size-full wp-image-10267"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2.jpeg 1536w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-300x300.jpeg 300w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-150x150.jpeg 150w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-768x768.jpeg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Almenn rafvirkjavinna</h4>
+                              <p class="elementor-image-box-description">Öll almenn rafvirkjavinna.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-4c88b27 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="4c88b27"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1200"
+                                height="1200"
+                                src="/wp-content/uploads/2023/10/Steypuvinna.jpg"
+                                class="attachment-full size-full wp-image-10271"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Steypuvinna.jpg 1200w, /wp-content/uploads/2023/10/Steypuvinna-300x300.jpg 300w, /wp-content/uploads/2023/10/Steypuvinna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Steypuvinna-150x150.jpg 150w, /wp-content/uploads/2023/10/Steypuvinna-768x768.jpg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Steypuvinna</h4>
+                              <p class="elementor-image-box-description">
+                                Flotun og slípun, flísalögn, uppsteypa, Tröppur og margt fleira.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-7035649 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="7035649"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="405"
+                                height="405"
+                                src="/wp-content/uploads/2023/10/Almenn-pipulaningavinna-1.jpg"
+                                class="attachment-full size-full wp-image-10266"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Almenn-pipulaningavinna-1.jpg 405w, /wp-content/uploads/2023/10/Almenn-pipulaningavinna-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Almenn-pipulaningavinna-1-150x150.jpg 150w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Almenn pípulagningavinna</h4>
+                              <p class="elementor-image-box-description">
+                                Tökum að okkur almenna pípulagningavinnu, bæði fyrir fyrirtæki og einstaklinga. Erum með
+                                pípulagningameistara á okkar snærum ásamt pípulagningamönnum.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-418c030 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="418c030"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="392"
+                                height="395"
+                                src="/wp-content/uploads/2023/10/Murbrot.jpg"
+                                class="attachment-full size-full wp-image-10292"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Murbrot.jpg 392w, /wp-content/uploads/2023/10/Murbrot-298x300.jpg 298w, /wp-content/uploads/2023/10/Murbrot-150x150.jpg 150w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Múrbrot og steypusögun</h4>
+                              <p class="elementor-image-box-description">Brjótum niður veggi, tröppur og gólfplötur.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-f459799 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-position-top elementor-widget elementor-widget-image-box"
+                        data-id="f459799"
+                        data-element_type="widget"
+                        data-widget_type="image-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img">
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="1200"
+                                height="1200"
+                                src="/wp-content/uploads/2023/10/Lagning-golfefna.jpg"
+                                class="attachment-full size-full wp-image-10159"
+                                alt=""
+                                srcset="/wp-content/uploads/2023/10/Lagning-golfefna.jpg 1200w, /wp-content/uploads/2023/10/Lagning-golfefna-300x300.jpg 300w, /wp-content/uploads/2023/10/Lagning-golfefna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Lagning-golfefna-150x150.jpg 150w, /wp-content/uploads/2023/10/Lagning-golfefna-768x768.jpg 768w"
+                                sizes="(max-width: 767px) 73vw, (max-width: 1024px) 39vw, 342px"
+                              />
+                            </figure>
+                            <div class="elementor-image-box-content">
+                              <h4 class="elementor-image-box-title">Lagning gólfefna</h4>
+                              <p class="elementor-image-box-description">
+                                Parketlögn, flísalögn, teppalögn og dúkalögn.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-4215bfbf elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="4215bfbf"
+                data-element_type="section"
+              >
+                <div class="elementor-container elementor-column-gap-no">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e98837c"
+                    data-id="7e98837c"
+                    data-element_type="column"
+                  >
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div
+                        class="elementor-element elementor-element-7225b475 elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel"
+                        data-id="7225b475"
+                        data-element_type="widget"
+                        data-settings='&#123;"show_arrows":"yes","pagination":"bullets","speed":500,"autoplay":"yes","autoplay_speed":5000,"loop":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","space_between":&#123;"unit":"px","size":10,"sizes":[]&#125;,"space_between_tablet":&#123;"unit":"px","size":10,"sizes":[]&#125;,"space_between_mobile":&#123;"unit":"px","size":10,"sizes":[]&#125;&#125;'
+                        data-widget_type="testimonial-carousel.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <TestimonialSlides set="set1" />
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-55614be3 elementor-align-center elementor-widget elementor-widget-button"
+                        data-id="55614be3"
+                        data-element_type="widget"
+                        data-widget_type="button.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="/umsagnir/">
+                              <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Allar umsagnir</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-dc6e302 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="dc6e302"
+                data-element_type="section"
+                data-settings='&#123;"background_background":"classic"&#125;'
+              >
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-no">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3eb32f"
+                    data-id="3eb32f"
+                    data-element_type="column"
+                  >
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div
+                        class="elementor-element elementor-element-50d6f5dd elementor-widget elementor-widget-heading"
+                        data-id="50d6f5dd"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h6 class="elementor-heading-title elementor-size-default">Afhverju að velja okkur?</h6>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-54dd74bc elementor-widget elementor-widget-heading"
+                        data-id="54dd74bc"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h2 class="elementor-heading-title elementor-size-default">Ástæður</h2>
+                        </div>
+                      </div>
+                      <section
+                        class="elementor-section elementor-inner-section elementor-element elementor-element-6f52faf2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="6f52faf2"
+                        data-element_type="section"
+                      >
+                        <div class="elementor-container elementor-column-gap-default">
+                          <div
+                            class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4421b6b3"
+                            data-id="4421b6b3"
+                            data-element_type="column"
+                            data-settings='&#123;"background_background":"classic"&#125;'
+                          >
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                              <div
+                                class="elementor-element elementor-element-61e1fd13 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+                                data-id="61e1fd13"
+                                data-element_type="widget"
+                                data-widget_type="icon-box.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                      <span class="elementor-icon">
+                                        <i aria-hidden="true" class="far fa-check-circle"></i>{' '}
+                                      </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                      <h6 class="elementor-icon-box-title">
+                                        <span>Reynsla </span>
+                                      </h6>
+                                      <p class="elementor-icon-box-description">
+                                        Við höfum víðtæka reynslu og erum í samstarfi við marga iðnaðarmenn
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7ce11c84"
+                            data-id="7ce11c84"
+                            data-element_type="column"
+                            data-settings='&#123;"background_background":"classic"&#125;'
+                          >
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                              <div
+                                class="elementor-element elementor-element-44b9611 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+                                data-id="44b9611"
+                                data-element_type="widget"
+                                data-widget_type="icon-box.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                      <span class="elementor-icon">
+                                        <i aria-hidden="true" class="fas fa-user-shield"></i>{' '}
+                                      </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                      <h6 class="elementor-icon-box-title">
+                                        <span>Vinnubrögð </span>
+                                      </h6>
+                                      <p class="elementor-icon-box-description">
+                                        Við leggjum mikla áherslu á vönduð vinnubrögð og umgengi á vinnustað
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1d11657"
+                            data-id="1d11657"
+                            data-element_type="column"
+                            data-settings='&#123;"background_background":"classic"&#125;'
+                          >
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                              <div
+                                class="elementor-element elementor-element-24430206 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+                                data-id="24430206"
+                                data-element_type="widget"
+                                data-widget_type="icon-box.default"
+                              >
+                                <div class="elementor-widget-container">
+                                  <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                      <span class="elementor-icon">
+                                        <i aria-hidden="true" class="fas fa-hard-hat"></i>{' '}
+                                      </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                      <h6 class="elementor-icon-box-title">
+                                        <span>Gæða efni </span>
+                                      </h6>
+                                      <p class="elementor-icon-box-description">
+                                        Við notum eingöngu viðkennd efni sem tryggja hámarksendingu og gæði
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-fdb1e5e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="fdb1e5e"
+                data-element_type="section"
+                data-settings='&#123;"shape_divider_top":"opacity-tilt","background_background":"classic"&#125;'
+              >
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-shape elementor-shape-top" aria-hidden="true" data-negative="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+                    <path class="elementor-shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+                    <path class="elementor-shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+                  </svg>
+                </div>
+                <div class="elementor-container elementor-column-gap-no">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ad7e385"
+                    data-id="ad7e385"
+                    data-element_type="column"
+                    data-settings='&#123;"background_background":"gradient"&#125;'
+                  >
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div
+                        class="elementor-element elementor-element-4166dbb elementor-widget elementor-widget-heading"
+                        data-id="4166dbb"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h6 class="elementor-heading-title elementor-size-default">Fáðu tilboð</h6>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-9924f6e elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                        data-id="9924f6e"
+                        data-element_type="widget"
+                        data-widget_type="icon-box.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-content">
+                              <h2 class="elementor-icon-box-title">
+                                <span>Við höfum samband </span>
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-8098feb elementor-widget elementor-widget-wpforms"
+                        data-id="8098feb"
+                        data-element_type="widget"
+                        data-widget_type="wpforms.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <ContactForm variant="quick" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+</Base>

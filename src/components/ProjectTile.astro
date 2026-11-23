@@ -1,34 +1,41 @@
 ---
-// One project as a photo tile with its title; used in the home page mosaic.
+// One project as a photo tile with its title and photo count; used wherever projects are listed.
+import { photoCount } from '../lib/projects';
 import type { Project } from '../lib/wp';
 
 interface Props {
   project: Project;
   /** The browser's `sizes` hint for where this tile sits in its grid. */
   sizes: string;
-  /** The first tile on the page loads ahead of everything else. */
-  priority?: boolean;
+  /** Tiles on screen when the page opens load at once; the rest wait until they are scrolled to. */
+  eager?: boolean;
+  /** Heading level for the title, where the tile is an item in a list of projects. */
+  heading?: 'h2' | 'h3';
 }
 
-const { project, sizes, priority = false } = Astro.props;
-const image = project.image!;
-const shown = image.sizes.large ?? image;
+const { project, sizes, eager = false, heading } = Astro.props;
+// A project saved without a cover photo shows its first photo, if it has any.
+const image = project.image ?? project.gallery[0];
+const shown = image?.sizes.large ?? image;
+const Title = heading ?? 'span';
 ---
 
 <a class="gf-tile" href={project.path}>
-  <img
-    src={shown.url}
-    srcset={image.srcset || undefined}
-    sizes={sizes}
-    width={shown.width}
-    height={shown.height}
-    alt=""
-    loading={priority ? 'eager' : 'lazy'}
-    fetchpriority={priority ? 'high' : undefined}
-    decoding="async"
-  />
+  {image && shown && (
+    <img
+      style={`view-transition-name:verk-${project.id}`}
+      src={shown.url}
+      srcset={image.srcset || undefined}
+      sizes={sizes}
+      width={shown.width}
+      height={shown.height}
+      alt=""
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+  )}
   <span class="gf-tile__caption">
-    <span class="gf-tile__title">{project.title}</span>
-    <span class="gf-tile__count">{project.gallery.length} myndir</span>
+    <Title class="gf-tile__title">{project.title}</Title>
+    {project.gallery.length > 0 && <span class="gf-tile__count">{photoCount(project.gallery.length)}</span>}
   </span>
 </a>

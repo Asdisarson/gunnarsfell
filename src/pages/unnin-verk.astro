@@ -1,89 +1,20 @@
 ---
+// Unnin verk: every project, as a grid of cover photos.
 import Base from '../layouts/Base.astro';
+import ContactSection from '../components/ContactSection.astro';
+import PageHead from '../components/PageHead.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
+import { BODY_CLASS } from '../site';
 ---
 
-<Base
-  path="/unnin-verk/"
-  type="page"
-  bodyClass="wp-singular page-template-default page page-id-15 wp-custom-logo wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-page-builder-template ast-no-sidebar astra-4.11.7 ast-single-post ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky elementor-default elementor-kit-8 elementor-page elementor-page-15 astra-addon-4.11.2"
->
-  <div class="ast-container">
-    <div id="primary" class="content-area primary">
-      <main id="main" class="site-main">
-        <article
-          class="post-15 page type-page status-publish ast-article-single"
-          id="post-15"
-          itemtype="https://schema.org/CreativeWork"
-          itemscope="itemscope"
-        >
-          <header class="entry-header ast-no-title ast-header-without-markup"></header>
-          <div class="entry-content clear" itemprop="text">
-            <div
-              data-elementor-type="wp-page"
-              data-elementor-id="15"
-              class="elementor elementor-15"
-              data-elementor-post-type="page"
-            >
-              <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-4be2d45 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="4be2d45"
-                data-element_type="section"
-                data-settings='&#123;"background_background":"classic"&#125;'
-              >
-                <div class="elementor-background-overlay"></div>
-                <div class="elementor-container elementor-column-gap-no">
-                  <div
-                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a085dea"
-                    data-id="a085dea"
-                    data-element_type="column"
-                  >
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                      <div
-                        class="elementor-element elementor-element-cc435a4 elementor-widget elementor-widget-heading"
-                        data-id="cc435a4"
-                        data-element_type="widget"
-                        data-widget_type="heading.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <h1 class="elementor-heading-title elementor-size-default">Unnin verk</h1>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-54668de elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="54668de"
-                data-element_type="section"
-              >
-                <div class="elementor-container elementor-column-gap-default">
-                  <div
-                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-34e011f"
-                    data-id="34e011f"
-                    data-element_type="column"
-                  >
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                      <div
-                        class="elementor-element elementor-element-ab865e1 elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-portfolio"
-                        data-id="ab865e1"
-                        data-element_type="widget"
-                        data-settings='&#123;"item_ratio":&#123;"unit":"px","size":1.2,"sizes":[]&#125;,"row_gap":&#123;"unit":"px","size":10,"sizes":[]&#125;,"columns":"4","columns_tablet":"2","columns_mobile":"1","item_gap":&#123;"unit":"px","size":"","sizes":[]&#125;&#125;'
-                        data-widget_type="portfolio.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <ProjectGrid />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </article>
-      </main>
-    </div>
-  </div>
+<Base path="/unnin-verk/" type="page" bodyClass={`gf-page page-id-15 ${BODY_CLASS}`}>
+  <main id="main" class="gf-main">
+    <PageHead title="Unnin verk" />
+    <section class="gf-section">
+      <div class="gf-wrap">
+        <ProjectGrid />
+      </div>
+    </section>
+    <ContactSection />
+  </main>
 </Base>

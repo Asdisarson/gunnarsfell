@@ -1,0 +1,35 @@
+---
+// "What our clients say": a heading and link beside the testimonial slider.
+// Anything passed as content sits between the heading and the link.
+import TestimonialSlides from './TestimonialSlides.astro';
+
+// The settings src/scripts/site.ts reads to start the slider.
+const settings = JSON.stringify({
+  show_arrows: 'yes',
+  pagination: 'bullets',
+  speed: 500,
+  autoplay: 'no',
+  loop: 'yes',
+  pause_on_hover: 'yes',
+  pause_on_interaction: 'yes',
+  space_between: { size: 10 },
+});
+---
+
+<section class="gf-section gf-section--mist" aria-labelledby="gf-clients-title">
+  <div class="gf-wrap gf-split">
+    <div>
+      <h2 id="gf-clients-title">Ánægja viðskiptavina okkar</h2>
+      <slot />
+      <a class="gf-link" href="/umsagnir/">
+        Allar umsagnir
+      </a>
+    </div>
+    <div
+      class="gf-quotes elementor-widget-testimonial-carousel elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-arrows-yes elementor-pagination-type-bullets"
+      data-settings={settings}
+    >
+      <TestimonialSlides />
+    </div>
+  </div>
+</section>

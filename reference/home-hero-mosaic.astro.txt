@@ -1,0 +1,155 @@
+---
+// Home page: the finished work leads, then what the company does, why, what clients say, and contact.
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import ProjectTile from '../components/ProjectTile.astro';
+import TestimonialSlides from '../components/TestimonialSlides.astro';
+import services from '../data/services.json';
+import { getContent } from '../lib/wp';
+import { COMPANY } from '../site';
+
+const { verk } = await getContent();
+// The mosaic shows the five projects with the most photos: the ones with the most to look at.
+const featured = verk
+  .filter((project) => project.image)
+  .sort((a, b) => b.gallery.length - a.gallery.length)
+  .slice(0, 5);
+
+const reasons = [
+  { title: 'Reynsla', text: 'Við höfum víðtæka reynslu og erum í samstarfi við marga iðnaðarmenn' },
+  { title: 'Vinnubrögð', text: 'Við leggjum mikla áherslu á vönduð vinnubrögð og umgengi á vinnustað' },
+  { title: 'Gæða efni', text: 'Við notum eingöngu viðkennd efni sem tryggja hámarksendingu og gæði' },
+];
+const carousel =
+  '{"show_arrows":"yes","pagination":"bullets","speed":500,"autoplay":"no","loop":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","space_between":{"size":10}}';
+---
+
+<Base
+  path="/"
+  type="page"
+  bodyClass="home page gf-home wp-custom-logo wp-theme-astra ast-page-builder-template ast-no-sidebar ast-single-post ast-hfb-header ast-full-width-layout elementor-default elementor-kit-8"
+>
+  <main id="main" class="gf-main">
+    <section class="gf-hero" aria-labelledby="gf-hero-title">
+      <div class="gf-hero__intro">
+        <h1 id="gf-hero-title">Allt á einum stað</h1>
+        <p>
+          Við búum yfir víðtækri reynslu og höfum yfir að ráða fjölda frábærra iðnaðarmanna sem kemur sér einstaklega
+          vel fyrir öll þau fjölbreyttu verk sem Gunnarsfell tekur að sér.
+        </p>
+        <div class="gf-actions">
+          <a class="gf-button" href="#fa-tilbod">
+            Fá tilboð
+          </a>
+          <a class="gf-button gf-button--quiet" href="tel:+3545464466">
+            Hringja í 546 4466
+          </a>
+        </div>
+      </div>
+      <div class="gf-mosaic">
+        {featured.map((project, i) => (
+          <ProjectTile
+            project={project}
+            priority={i === 0}
+            sizes={
+              i === 0
+                ? '(max-width: 767px) 100vw, (max-width: 1024px) 40vw, 36vw'
+                : '(max-width: 767px) 50vw, (max-width: 1024px) 30vw, 26vw'
+            }
+          />
+        ))}
+      </div>
+      <a class="gf-hero__all" href="/unnin-verk/">
+        Skoða öll {verk.length} verkin
+      </a>
+    </section>
+
+    <section class="gf-section" aria-labelledby="gf-services-title">
+      <div class="gf-wrap">
+        <header class="gf-section__head">
+          <h2 id="gf-services-title">Það sem við gerum</h2>
+          <a class="gf-link" href="/thjonusta/">
+            Sjá alla þjónustu
+          </a>
+        </header>
+        <ul class="gf-services">
+          {services.map((service) => (
+            <li>
+              <h3>{service.name}</h3>
+              <p>{service.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="gf-section gf-section--forest" aria-labelledby="gf-reasons-title">
+      <div class="gf-wrap">
+        <h2 id="gf-reasons-title">Af hverju að velja okkur?</h2>
+        <ul class="gf-reasons">
+          {reasons.map((reason) => (
+            <li>
+              <h3>{reason.title}</h3>
+              <p>{reason.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="gf-section gf-section--mist" aria-labelledby="gf-clients-title">
+      <div class="gf-wrap gf-split">
+        <div>
+          <h2 id="gf-clients-title">Ánægja viðskiptavina okkar</h2>
+          <p>
+            Við höfum notið velvildar og ánægju viðskiptavina okkar en Gunnarsfell leggur áherslu á vönduð vinnubrögð,
+            góða umgengni á vinnustað og notum eingöngu viðkennd efni sem tryggja hámarksendingu og gæði.
+          </p>
+          <a class="gf-link" href="/umsagnir/">
+            Allar umsagnir
+          </a>
+        </div>
+        <div
+          class="gf-quotes elementor-widget-testimonial-carousel elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-arrows-yes elementor-pagination-type-bullets"
+          data-settings={carousel}
+        >
+          <TestimonialSlides set="set1" />
+        </div>
+      </div>
+    </section>
+
+    <section class="gf-section" id="fa-tilbod" aria-labelledby="gf-contact-title">
+      <div class="gf-wrap gf-split">
+        <div>
+          <h2 id="gf-contact-title">Fáðu Gunnarsfell í verkið</h2>
+          <p>Veistu ekki hvað þú átt að gera? Sendu okkur línu eða hringdu.</p>
+          <dl class="gf-facts">
+            <dt>Skrifstofa</dt>
+            <dd>
+              {COMPANY.name}
+              <br />
+              {COMPANY.address}
+            </dd>
+            <dt>Sími</dt>
+            <dd>
+              <a href="tel:+3545464466">546 4466</a>
+            </dd>
+            <dt>Tölvupóstur</dt>
+            <dd>
+              <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+            </dd>
+            <dt>Opnunartímar</dt>
+            <dd>
+              Mánudaga – fimmtudaga: 8 – 17
+              <br />
+              Föstudaga: 8 – 15
+            </dd>
+          </dl>
+        </div>
+        <div class="gf-form">
+          <ContactForm variant="full" />
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

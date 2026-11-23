@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
 import { getContent } from '../lib/wp';
+import { BODY_CLASS } from '../site';
 
 const { site, origin } = await getContent();
 const title = `Page not found - ${site.name}`;
@@ -27,32 +29,21 @@ const seo = {
 };
 ---
 
-<Base
-  path="/404/"
-  type="404"
-  seo={seo}
-  bodyClass="error404 wp-custom-logo wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-separate-container ast-two-container ast-no-sidebar astra-4.11.7 ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky elementor-default elementor-kit-8 astra-addon-4.11.2"
->
-  <div class="ast-container">
-    <div id="primary" class="content-area primary">
-      <section class="error-404 not-found">
-        <div class="ast-404-layout-1">
-          <header class="page-header">
-            <h1 class="page-title">Þessi síða finnst ekki.</h1>
-          </header>
-          <div class="page-content">
-            <div class="page-sub-title">Slóðin sem þú fylgdir virðist vera röng.</div>
-            <p class="gf-404-actions">
-              <a class="ast-button" href="/">
-                Fara á forsíðu
-              </a>
-              <a class="ast-button" href="/unnin-verk/">
-                Skoða unnin verk
-              </a>
-            </p>
-          </div>
+<Base path="/404/" type="404" seo={seo} bodyClass={`error404 gf-page ${BODY_CLASS}`}>
+  <main id="main" class="gf-main">
+    <PageHead title="Þessi síða finnst ekki." />
+    <section class="gf-section">
+      <div class="gf-wrap">
+        <p>Slóðin sem þú fylgdir virðist vera röng.</p>
+        <div class="gf-actions gf-actions--page">
+          <a class="gf-button" href="/">
+            Fara á forsíðu
+          </a>
+          <a class="gf-link" href="/unnin-verk/">
+            Skoða unnin verk
+          </a>
         </div>
-      </section>
-    </div>
-  </div>
+      </div>
+    </section>
+  </main>
 </Base>

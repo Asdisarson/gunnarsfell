@@ -5,14 +5,14 @@ Static Astro site. WordPress (in `../app/public`) is the content admin only: pro
 
 ## Commands
 
-| Command | What it does |
-| --- | --- |
-| `npm run dev` | Dev server on http://localhost:4321 (WordPress must be running) |
-| `npm run build` | Copies the images (and their WebP versions) from WordPress, builds to `dist/`, then optimizes every page |
-| `npm run preview` | Serves `dist/` |
-| `npm test` | Unit tests (SEO head, content mapping, sitemaps) |
-| `npm run seo-diff` | Compares every built page's head with the old site's (`reference/seo-baseline.json`) |
-| `node scripts/compare.mjs` | Measures layout on the old and new site at three widths and prints differences |
+| Command                    | What it does                                                                                             |
+| -------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `npm run dev`              | Dev server on http://localhost:4321 (WordPress must be running)                                          |
+| `npm run build`            | Copies the images (and their WebP versions) from WordPress, builds to `dist/`, then optimizes every page |
+| `npm run preview`          | Serves `dist/`                                                                                           |
+| `npm test`                 | Unit tests (SEO head, content mapping, sitemaps)                                                         |
+| `npm run seo-diff`         | Compares every built page's head with the old site's (`reference/seo-baseline.json`)                     |
+| `node scripts/compare.mjs` | Measures layout on the old and new site at three widths and prints differences                           |
 
 Configuration is in `.env` (see `.env.example`): `WP_URL`, `SITE_URL`, `PUBLIC_CONTACT_ENDPOINT`,
 optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
@@ -28,11 +28,6 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
   `public/assets/legacy/site-*.css` holds the old site's CSS reduced to what is used, one bundle per template
   type. `src/styles/site.css` adds the few new things (form messages, lightbox).
 - **Pages:** `src/pages/*.astro` hold the page content. Text changes are made there.
-- **Refresh (branch `refresh`):** the home page (`src/pages/index.astro`) is written fresh with `gf-` classes and
-  leads with a mosaic of the five projects that have the most photos. `src/styles/refresh.css` holds its styles
-  and restyles the shared header, buttons, project grid and gallery on the other pages. The old home page is
-  kept in `reference/home-before-refresh.astro.txt`. The layout comparison with the old site no longer applies
-  to the home page or the header.
 - **Projects:** `src/pages/verk/[slug].astro`, `src/components/ProjectGrid.astro`, `ProjectGallery.astro`.
 - **SEO:** `src/lib/seo.ts` renders Yoast's data per URL. Titles and descriptions are still edited in Yoast.
   Sitemaps keep Yoast's file names (`sitemap_index.xml`, `page-`, `verk-`, `umsogn-sitemap.xml`).
@@ -41,10 +36,12 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
 - **Page optimization:** `scripts/optimize-html.mjs` runs last in the build (rules and tests in
   `scripts/lib/optimize-html.mjs`): WebP offered through `<picture>`, images loaded lazily unless a
   template marks them eager (the first content image and the first row of a grid or gallery), descriptions added to images that sit in a card with one heading. The dev server does not run it.
-- **Image `sizes`:** the page templates carry measured `sizes` values. After changing a page's layout, run
-  `node scripts/fix-sizes.mjs` against the dev server to re-measure them. The project grid and gallery set
-  theirs in `src/components/ProjectGrid.astro` and `ProjectGallery.astro`.
-- **Browser behaviour:** `src/scripts/site.ts` (mobile menu, testimonial slider, gallery lightbox, forms).
+- **Image `sizes`:** each template and component writes the `sizes` hint for its own layout by hand; change
+  it together with the layout.
+- **Page design:** every page is built from `gf-` parts styled in `src/styles/refresh.css`: `PageHead`,
+  `Reasons` and `ContactSection` in `src/components/` are shared, `HomeHero` opens the home page. The markup
+  the pages had before is kept in `reference/*-before.astro.txt`.
+- **Browser behaviour:** `src/scripts/site.ts` (mobile menu, home hero, testimonial slider, gallery lightbox, forms).
 
 ## Parity with the old site
 
@@ -57,9 +54,8 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
 
 ## One-off scripts
 
-`scripts/capture.mjs`, `extract.mjs` and `fragments-to-astro.mjs` produced the SEO baseline, the CSS bundles
-and the first version of the page templates from the old WordPress front end. They need the old theme and
-Elementor active. Rerunning `fragments-to-astro.mjs` overwrites hand edits in `src/pages`.
+`scripts/capture.mjs` and `extract.mjs` produced the SEO baseline and the CSS bundles from the old WordPress
+front end. They need the old theme and Elementor active.
 
 ## Going live (not done yet)
 

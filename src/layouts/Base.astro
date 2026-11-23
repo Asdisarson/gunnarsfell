@@ -9,6 +9,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import MobileMenu from '../components/MobileMenu.astro';
 import { SITE_LANG, type YoastHead } from '../lib/seo';
+import { COMPANY } from '../site';
 
 interface Props {
   /** URL path of this page, with slashes: "/um-okkur/". */
@@ -107,7 +108,7 @@ const pixel = import.meta.env.PUBLIC_FB_PIXEL_ID;
       <SiteFooter path={path} />
     </div>
     <nav class="gf-callbar" aria-label="Hafa samband">
-      <a href="tel:+3545464466">Hringja</a>
+      <a href={COMPANY.tel}>Hringja</a>
       {/* The contact page is where this button leads, so it is left out there. */}
       {path !== '/hafa-samband/' && <a href={path === '/' ? '#fa-tilbod' : '/hafa-samband/'}>Fá tilboð</a>}
     </nav>

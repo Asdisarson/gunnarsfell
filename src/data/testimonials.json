@@ -1,5 +1,5 @@
 {
-  "set1": [
+  "slides": [
     {
       "text": "\"Gunnarsfell sá um allar breytingar á sýningarsal og lagerrými okkar hjá Orgus, allt frá því að rífa niður eldra og setja upp nýja veggi og alveg upp í lokafrágang á húsnæðinu.  Gunnarsfell býður upp á heildarþjónustu, smíði, rafvirkjun og pípulagnir. Þeir sáu um allt og samskiptin voru frábær.  Iðnaðarmennirnir á staðnum voru skilvirkir, vandvirkir, þægilegir í nærveru og gengu vel um allt.  Við getum gefið Gunnarsfelli öll okkar bestu meðmæli og erum rosalega ánægð með vinnuna þeirra.​\"",
       "image": "/wp-content/uploads/2023/09/Gudrun_Orgus.png",
@@ -19,12 +19,36 @@
       "title": "Innanhússarkitekt FHI"
     }
   ],
-  "set2": [
+  "full": [
     {
-      "text": "\"Gunnarsfell sá um allar breytingar á sýningarsal og lagerrými okkar hjá Orgus, allt frá því að rífa niður eldra og setja upp nýja veggi og alveg upp í lokafrágang á húsnæðinu.  Gunnarsfell býður upp á heildarþjónustu, smíði, rafvirkjun og pípulagnir. Þeir sáu um allt og samskiptin voru frábær.  Iðnaðarmennirnir á staðnum voru skilvirkir, vandvirkir, þægilegir í nærveru og gengu vel um allt.  Við getum gefið Gunnarsfelli öll okkar bestu meðmæli og erum rosalega ánægð með vinnuna þeirra.​\"",
-      "image": "/wp-content/uploads/2023/09/Gudrun_Orgus.png",
-      "name": "Guðrún M. Örnólfsdóttir​",
-      "title": "FRAMKVÆMDASTJÓRI ORGUS EHF.​"
+      "name": "Guðrún M. Örnólfsdóttir",
+      "text": "\"Gunnarsfell sá um allar breytingar á sýningarsal og lagerrými okkar hjá Orgus, allt frá því að rífa niður eldra og setja upp nýja veggi og alveg upp í lokafrágang á húsnæðinu. Gunnarsfell býður upp á heildarþjónustu, smíði, rafvirkjun og pípulagnir. Þeir sáu um allt og samskiptin voru frábær. Iðnaðarmennirnir á staðnum voru skilvirkir, vandvirkir, þægilegir í nærveru og gengu vel um allt. Við getum gefið Gunnarsfelli öll okkar bestu meðmæli og erum rosalega ánægð með vinnuna þeirra.\"",
+      "image": {
+        "src": "/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+        "width": 790,
+        "height": 772,
+        "srcset": "/wp-content/uploads/2023/09/Gudrun_Orgus.png 790w, /wp-content/uploads/2023/09/Gudrun_Orgus-300x293.png 300w, /wp-content/uploads/2023/09/Gudrun_Orgus-768x751.png 768w"
+      }
+    },
+    {
+      "name": "Arnar Gauti",
+      "text": "\"Ég hef unnið með Gunnari eiganda Gunnarsfell í um 2 ár núna og sem upplifunarhönnuður hafa verkefnin mín aldrei gengið jafnvel og áður og ánægja viðskiptavina minna er mikil með vönduð vinnubrögð, tímalínur standast alltaf og lausn flókna mála hefur aldrei stoppað strákana hjá Gunnarsfell. Enginn verktaki hefur þetta mind sett sem ég hef unnið með varðandi umgengni o.fl. Við höfum unnið að mistórum verkefnum saman allt frá einu af fallegasta sveitasetri landsins til 3000m2 höfuðstöðva stórfyrirtækis. Staðan í dar er sú að ég tek ekki að mér hönnunarverkefni lengur nema að ég hafi tök á því að vinna það með Gunnarsfell þar sem ég treysti ekki neinum öðrum fyrir verkefnum mínum og það gerir mitt starf ánægjulegra og skilar ávallt fullkominni útkomu fyrir viðskiptavini mína. Það er þetta dýrmæta traust á milli verktaka og hönnuðar sem skiptir sköpum þegar kemur að sér að skila af sér ánægjulegri upplifun\"",
+      "image": {
+        "src": "/wp-content/uploads/2023/09/Arnar-Gauti.jpeg",
+        "width": 905,
+        "height": 1280,
+        "srcset": "/wp-content/uploads/2023/09/Arnar-Gauti.jpeg 905w, /wp-content/uploads/2023/09/Arnar-Gauti-212x300.jpeg 212w, /wp-content/uploads/2023/09/Arnar-Gauti-724x1024.jpeg 724w, /wp-content/uploads/2023/09/Arnar-Gauti-768x1086.jpeg 768w"
+      }
+    },
+    {
+      "name": "Ragnar Sigurðsson",
+      "text": "\"Ég hef unnið aðeins með strákunum í Gunnarsfell og þeir hafa alltaf staðið við sitt. Viðskiptavinir mínir eru ótrúlega ánægðir með þeirra störf, þeir eru mjög vandvirkir, úrræðagóðir og frágangur og hreinlæti á vinnustað er til fyrirmyndar sem skiptir miklu máli í þeim verkefnum sem ég tek að mér í heimahúsum. Tímalínur hafa alltaf staðist og við höfum náð að vinna mjög vel saman í þeim verkefnum sem ég hef tekið að mér með Gunnarsfell verktökum.\"",
+      "image": {
+        "src": "/wp-content/uploads/2023/09/Ragnar_Sig.jpg",
+        "width": 1366,
+        "height": 2048,
+        "srcset": "/wp-content/uploads/2023/09/Ragnar_Sig.jpg 1366w, /wp-content/uploads/2023/09/Ragnar_Sig-200x300.jpg 200w, /wp-content/uploads/2023/09/Ragnar_Sig-683x1024.jpg 683w, /wp-content/uploads/2023/09/Ragnar_Sig-768x1151.jpg 768w, /wp-content/uploads/2023/09/Ragnar_Sig-1025x1536.jpg 1025w"
+      }
     }
   ]
 }

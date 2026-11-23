@@ -1,5 +1,5 @@
 // Browser behaviour that the WordPress theme and Elementor scripts used to provide:
-// mobile menu, testimonial sliders, gallery lightbox and the contact forms.
+// mobile menu, home page hero, testimonial sliders, gallery lightbox and the contact forms.
 
 /* Mobile menu (off-canvas drawer) --------------------------------------- */
 
@@ -24,6 +24,55 @@ function initMobileMenu() {
   drawer.querySelectorAll('[data-menu-close], a').forEach((el) => el.addEventListener('click', () => setOpen(false)));
   document.addEventListener('keydown', (event) => event.key === 'Escape' && setOpen(false));
   window.addEventListener('resize', () => window.innerWidth > 921 && setOpen(false));
+}
+
+/* Home page hero ---------------------------------------------------------- */
+
+/** Changes the project photo behind the home page introduction, slowly, every few seconds. */
+function initHero() {
+  const hero = document.querySelector<HTMLElement>('[data-hero]');
+  const controls = hero?.querySelector<HTMLElement>('[data-hero-controls]');
+  if (!hero || !controls) return;
+  const slides = [...hero.querySelectorAll<HTMLElement>('[data-hero-slide]')];
+  const links = [...hero.querySelectorAll<HTMLElement>('[data-hero-link]')];
+  const HOLD_MS = 10_000;
+  // Visitors who ask for less motion change the photo themselves, with the arrows.
+  const auto = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let index = 0;
+  let timer = 0;
+
+  // A photo enters the page (and so downloads) one step before it is shown, never all at once.
+  const reveal = (i: number) => (slides[(i + slides.length) % slides.length].hidden = false);
+  const wait = () => {
+    window.clearTimeout(timer);
+    if (auto) timer = window.setTimeout(tick, HOLD_MS);
+  };
+  const show = (next: number) => {
+    index = (next + slides.length) % slides.length;
+    reveal(index);
+    reveal(index + 1);
+    reveal(index - 1);
+    slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+    links.forEach((link, i) => (link.hidden = i !== index));
+    wait();
+  };
+  // In a background tab, or with the pointer resting on the hero, the photo stays where it is.
+  const tick = () => (document.hidden || hero.matches(':hover') ? wait() : show(index + 1));
+
+  hero.querySelector('[data-hero-prev]')!.addEventListener('click', () => show(index - 1));
+  hero.querySelector('[data-hero-next]')!.addEventListener('click', () => show(index + 1));
+  // Reaching for the arrows fetches the photo "previous" would show.
+  controls.addEventListener('pointerenter', () => reveal(index - 1));
+  controls.addEventListener('focusin', () => reveal(index - 1));
+
+  const start = () => {
+    // Only now does the second photo enter the page, so it never competes with the first one.
+    reveal(index + 1);
+    controls.hidden = false;
+    wait();
+  };
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
 }
 
 /* Testimonial sliders ---------------------------------------------------- */
@@ -199,6 +248,7 @@ function initForms() {
 }
 
 initMobileMenu();
+initHero();
 initLightbox();
 initForms();
 initCarousels().catch((error) => console.error('Slider failed to start', error));

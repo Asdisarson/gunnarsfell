@@ -3,11 +3,7 @@
 // The texts live in src/data/testimonials.json, copied from the widgets on the old site.
 import sets from '../data/testimonials.json';
 
-interface Props {
-  set: keyof typeof sets;
-}
-
-const slides = sets[Astro.props.set];
+const { slides } = sets;
 ---
 
 <div class="elementor-swiper">

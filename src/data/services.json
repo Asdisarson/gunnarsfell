@@ -1,14 +1,122 @@
 [
-  { "name": "Viðhald og endurnýjun", "text": "Tökum að okkur almennt viðhald fasteigna, s.s. breytingar innan- og utandyra." },
-  { "name": "Pallasmíði og skjólveggir", "text": "Sólpallur, grindverk og skjólveggir, smáhýsi og fleira." },
-  { "name": "Lagning gólfefna", "text": "Parketlögn, flísalögn, teppalögn og dúkalögn." },
-  { "name": "Flísalögn", "text": "Leggjum flísar á baðherbergi, veggi og gólf erum með mjög sérhæfða aðila sem skilar frábærri og vandaðari vinnu." },
-  { "name": "Uppsetning á innréttingum", "text": "Setjum upp eldhúsinnréttingar, fataskápa, getum látið sérsmíða innréttingar og margt fleira." },
-  { "name": "Þakviðgerðir", "text": "Þakpappalögn, lekaviðgerðir, endurnýjun á þaki, flasningar og bárujárn." },
-  { "name": "Málningarvinna", "text": "Innimálun og útimálun, lökkun, sprautun og spartlvinna." },
-  { "name": "Steypuvinna", "text": "Flotun og slípun, flísalögn, uppsteypa, Tröppur og margt fleira." },
-  { "name": "Múrbrot og steypusögun", "text": "Brjótum niður veggi, tröppur og gólfplötur." },
-  { "name": "Almenn garðvinna og hellulögn", "text": "Tökum að okkur almenna garðvinnu ásamt helluglögn ofl." },
-  { "name": "Almenn rafvirkjavinna", "text": "Öll almenn rafvirkjavinna." },
-  { "name": "Almenn pípulagningavinna", "text": "Tökum að okkur almenna pípulagningavinnu, bæði fyrir fyrirtæki og einstaklinga." }
+  {
+    "name": "Viðhald og endurnýjun",
+    "text": "Tökum að okkur almennt viðhald fasteigna, s.s. breytingar innan- og utandyra.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg",
+      "width": 721,
+      "height": 721,
+      "srcset": "/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg 721w, /wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1-150x150.jpg 150w"
+    }
+  },
+  {
+    "name": "Málningarvinna",
+    "text": "Innimálun og útimálun, lökkun, sprautun og spartlvinna.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Malningarvinna-1.jpeg",
+      "width": 1536,
+      "height": 1536,
+      "srcset": "/wp-content/uploads/2023/10/Malningarvinna-1.jpeg 1536w, /wp-content/uploads/2023/10/Malningarvinna-1-300x300.jpeg 300w, /wp-content/uploads/2023/10/Malningarvinna-1-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Malningarvinna-1-150x150.jpeg 150w, /wp-content/uploads/2023/10/Malningarvinna-1-768x768.jpeg 768w"
+    }
+  },
+  {
+    "name": "Flísalögn",
+    "text": "Leggjum flísar á baðherbergi, veggi og gólf erum með mjög sérhæfða aðila sem skilar frábærri og vandaðari vinnu.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Flisalogn.jpeg",
+      "width": 1536,
+      "height": 1536,
+      "srcset": "/wp-content/uploads/2023/10/Flisalogn.jpeg 1536w, /wp-content/uploads/2023/10/Flisalogn-300x300.jpeg 300w, /wp-content/uploads/2023/10/Flisalogn-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Flisalogn-150x150.jpeg 150w, /wp-content/uploads/2023/10/Flisalogn-768x768.jpeg 768w"
+    }
+  },
+  {
+    "name": "Uppsetning á innréttingum",
+    "text": "Setjum upp eldhúsinnréttingar, fataskápa, getum látið sérsmíða innréttingar og margt fleira.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Uppsetning-innrettinga.jpeg",
+      "width": 1532,
+      "height": 1536,
+      "srcset": "/wp-content/uploads/2023/10/Uppsetning-innrettinga.jpeg 1532w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-300x300.jpeg 300w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-1021x1024.jpeg 1021w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-150x150.jpeg 150w, /wp-content/uploads/2023/10/Uppsetning-innrettinga-768x770.jpeg 768w"
+    }
+  },
+  {
+    "name": "Almenn garðvinna og hellulögn",
+    "text": "Tökum að okkur almenna garðvinnu ásamt helluglögn ofl.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Almenn-Gardvinna.jpg",
+      "width": 1536,
+      "height": 1536,
+      "srcset": "/wp-content/uploads/2023/10/Almenn-Gardvinna.jpg 1536w, /wp-content/uploads/2023/10/Almenn-Gardvinna-300x300.jpg 300w, /wp-content/uploads/2023/10/Almenn-Gardvinna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Almenn-Gardvinna-150x150.jpg 150w, /wp-content/uploads/2023/10/Almenn-Gardvinna-768x768.jpg 768w"
+    }
+  },
+  {
+    "name": "Þakviðgerðir",
+    "text": "Þakpappalögn, lekaviðgerðir, endurnýjun á þaki, flasningar og bárujárn.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/THakvidgerdir-1.jpg",
+      "width": 1200,
+      "height": 1200,
+      "srcset": "/wp-content/uploads/2023/10/THakvidgerdir-1.jpg 1200w, /wp-content/uploads/2023/10/THakvidgerdir-1-300x300.jpg 300w, /wp-content/uploads/2023/10/THakvidgerdir-1-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/THakvidgerdir-1-150x150.jpg 150w, /wp-content/uploads/2023/10/THakvidgerdir-1-768x768.jpg 768w"
+    }
+  },
+  {
+    "name": "Pallasmíði og skjólveggir",
+    "text": "Sólpallur, grindverk og skjólveggir, smáhýsi og fleira.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1.jpg",
+      "width": 757,
+      "height": 757,
+      "srcset": "/wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1.jpg 757w, /wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Pallasmidi-og-skjolveggir-1-150x150.jpg 150w"
+    }
+  },
+  {
+    "name": "Almenn rafvirkjavinna",
+    "text": "Öll almenn rafvirkjavinna.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2.jpeg",
+      "width": 1536,
+      "height": 1536,
+      "srcset": "/wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2.jpeg 1536w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-300x300.jpeg 300w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-1024x1024.jpeg 1024w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-150x150.jpeg 150w, /wp-content/uploads/2023/10/Almenn-rafvirkjavinna-2-768x768.jpeg 768w"
+    }
+  },
+  {
+    "name": "Steypuvinna",
+    "text": "Flotun og slípun, flísalögn, uppsteypa, Tröppur og margt fleira.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Steypuvinna.jpg",
+      "width": 1200,
+      "height": 1200,
+      "srcset": "/wp-content/uploads/2023/10/Steypuvinna.jpg 1200w, /wp-content/uploads/2023/10/Steypuvinna-300x300.jpg 300w, /wp-content/uploads/2023/10/Steypuvinna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Steypuvinna-150x150.jpg 150w, /wp-content/uploads/2023/10/Steypuvinna-768x768.jpg 768w"
+    }
+  },
+  {
+    "name": "Almenn pípulagningavinna",
+    "text": "Tökum að okkur almenna pípulagningavinnu, bæði fyrir fyrirtæki og einstaklinga. Erum með pípulagningameistara á okkar snærum ásamt pípulagningamönnum.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Almenn-pipulaningavinna-1.jpg",
+      "width": 405,
+      "height": 405,
+      "srcset": "/wp-content/uploads/2023/10/Almenn-pipulaningavinna-1.jpg 405w, /wp-content/uploads/2023/10/Almenn-pipulaningavinna-1-300x300.jpg 300w, /wp-content/uploads/2023/10/Almenn-pipulaningavinna-1-150x150.jpg 150w"
+    }
+  },
+  {
+    "name": "Múrbrot og steypusögun",
+    "text": "Brjótum niður veggi, tröppur og gólfplötur.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Murbrot.jpg",
+      "width": 392,
+      "height": 395,
+      "srcset": "/wp-content/uploads/2023/10/Murbrot.jpg 392w, /wp-content/uploads/2023/10/Murbrot-298x300.jpg 298w, /wp-content/uploads/2023/10/Murbrot-150x150.jpg 150w"
+    }
+  },
+  {
+    "name": "Lagning gólfefna",
+    "text": "Parketlögn, flísalögn, teppalögn og dúkalögn.",
+    "image": {
+      "src": "/wp-content/uploads/2023/10/Lagning-golfefna.jpg",
+      "width": 1200,
+      "height": 1200,
+      "srcset": "/wp-content/uploads/2023/10/Lagning-golfefna.jpg 1200w, /wp-content/uploads/2023/10/Lagning-golfefna-300x300.jpg 300w, /wp-content/uploads/2023/10/Lagning-golfefna-1024x1024.jpg 1024w, /wp-content/uploads/2023/10/Lagning-golfefna-150x150.jpg 150w, /wp-content/uploads/2023/10/Lagning-golfefna-768x768.jpg 768w"
+    }
+  }
 ]

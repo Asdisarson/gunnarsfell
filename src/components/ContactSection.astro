@@ -1,0 +1,50 @@
+---
+// Where every page ends: how to reach the company, beside the contact form.
+// The call bar on phones and the hero button link to its id, #fa-tilbod.
+import ContactForm from './ContactForm.astro';
+import { COMPANY } from '../site';
+
+interface Props {
+  /** The section heading; the contact page asks its own question here. */
+  title?: string;
+  /** One line under the heading; pass an empty string to leave it out. */
+  lead?: string;
+}
+
+const { title = 'Fáðu Gunnarsfell í verkið', lead = 'Veistu ekki hvað þú átt að gera? Sendu okkur línu eða hringdu.' } =
+  Astro.props;
+---
+
+<section class="gf-section" id="fa-tilbod" aria-labelledby="gf-contact-title">
+  <div class="gf-wrap gf-split">
+    <div>
+      <h2 id="gf-contact-title">{title}</h2>
+      {lead && <p>{lead}</p>}
+      <dl class="gf-facts">
+        <dt>Skrifstofa</dt>
+        <dd>
+          {COMPANY.name}
+          <br />
+          {COMPANY.address}
+        </dd>
+        <dt>Sími</dt>
+        <dd>
+          <a href={COMPANY.tel}>546 4466</a>
+        </dd>
+        <dt>Tölvupóstur</dt>
+        <dd>
+          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+        </dd>
+        <dt>Opnunartímar</dt>
+        <dd>
+          Mánudaga – fimmtudaga: 8 – 17
+          <br />
+          Föstudaga: 8 – 15
+        </dd>
+      </dl>
+    </div>
+    <div class="gf-form">
+      <ContactForm />
+    </div>
+  </div>
+</section>
