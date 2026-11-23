@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "gunnarsfell-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/cube/Local Sites/gunnarsfell/frontend", "run", "dev", "--", "--port", "4321"],
+      "port": 4321
+    },
+    {
       "name": "gunnarsfell-frontend",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "/Users/cube/Local Sites/gunnarsfell/frontend", "run", "preview", "--", "--port", "4321"],
