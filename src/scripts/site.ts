@@ -59,6 +59,8 @@ async function initCarousels() {
     new Swiper(el, {
       modules: [A11y, Autoplay, Navigation, Pagination],
       slidesPerView: 1,
+      // On the home page the card follows the length of each quote instead of the longest one.
+      autoHeight: widget.classList.contains('gf-quotes'),
       spaceBetween: settings.space_between?.size ?? 10,
       speed: settings.speed ?? 500,
       loop: settings.loop === 'yes',

@@ -1,0 +1,574 @@
+/* The 2026 refresh. Part 1 is the home page, written fresh (gf- classes). Part 2 restyles the header,
+   buttons, project grid and gallery that every page shares, on top of the carried-over theme CSS. */
+
+:root {
+  --gf-forest: #14261c;
+  --gf-green: #1bae70;
+  --gf-green-deep: #0c7a4b; /* green that passes contrast as text on white */
+  --gf-slate: #4e5652;
+  --gf-mist: #f1f5f2;
+  --gf-line: #d9e0db;
+  --gf-white: #fff;
+  --gf-display: 'Rubik', sans-serif;
+  --gf-text: 'Karla', sans-serif;
+  --gf-wrap: 1200px;
+  --gf-gutter: clamp(20px, 4vw, 40px);
+  --gf-space: clamp(56px, 8vw, 104px);
+  --gf-radius: 6px;
+  --gf-header: 84px;
+}
+
+/* ---------- Part 1: home page ---------------------------------------------------------------- */
+
+.gf-main {
+  color: var(--gf-slate);
+  font-family: var(--gf-text);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.gf-main h1,
+.gf-main h2,
+.gf-main h3 {
+  margin: 0;
+  color: var(--gf-forest);
+  font-family: var(--gf-display);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.gf-main h2 {
+  font-size: clamp(30px, 3.6vw, 44px);
+}
+.gf-main h3 {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+.gf-main p {
+  margin: 0;
+  max-width: 62ch;
+}
+.gf-main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gf-wrap {
+  max-width: var(--gf-wrap);
+  margin-inline: auto;
+  padding-inline: var(--gf-gutter);
+}
+.gf-section {
+  padding-block: var(--gf-space);
+  background: var(--gf-white);
+}
+/* An in-page link must not land underneath the fixed header. */
+.gf-section[id] {
+  scroll-margin-top: var(--gf-header);
+}
+.gf-section--mist {
+  background: var(--gf-mist);
+}
+.gf-section--forest {
+  background: var(--gf-forest);
+  color: #d5ddd8;
+}
+.gf-main .gf-section--forest h2,
+.gf-main .gf-section--forest h3 {
+  color: var(--gf-white);
+}
+.gf-section__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 32px;
+  margin-bottom: 40px;
+}
+.gf-split {
+  display: grid;
+  gap: 48px;
+}
+.gf-split > div > * + * {
+  margin-top: 20px;
+}
+
+/* Buttons and links */
+.gf-main .gf-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 28px;
+  border-radius: var(--gf-radius);
+  background: var(--gf-green);
+  color: var(--gf-forest);
+  font-family: var(--gf-display);
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+.gf-main .gf-button:hover {
+  background: #3cc98b;
+  color: var(--gf-forest);
+}
+.gf-main .gf-button--quiet {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.45);
+  color: var(--gf-white);
+}
+.gf-main .gf-button--quiet:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--gf-white);
+}
+.gf-main .gf-link {
+  color: var(--gf-green-deep);
+  font-family: var(--gf-display);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+/* Text links get a finger-sized height. */
+.gf-main .gf-link,
+.gf-main .gf-facts a {
+  display: inline-block;
+  padding-block: 10px;
+}
+.gf-main .gf-link:hover {
+  color: var(--gf-forest);
+}
+/* A two-tone ring, so it shows on white, green and dark green alike. */
+.gf-main a:focus-visible,
+.gf-callbar a:focus-visible,
+.gf-quotes .elementor-swiper-button:focus-visible {
+  outline: 3px solid var(--gf-white);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 8px var(--gf-forest);
+}
+.gf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Hero: the introduction beside a mosaic of finished projects */
+.gf-hero {
+  display: grid;
+  background: var(--gf-forest);
+}
+.gf-hero__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: clamp(36px, 6vw, 72px) var(--gf-gutter);
+  color: #d5ddd8;
+}
+.gf-main .gf-hero__intro h1 {
+  color: var(--gf-white);
+  font-size: clamp(44px, 6.4vw, 84px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+.gf-hero__intro p {
+  max-width: 44ch;
+}
+.gf-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.gf-mosaic > :first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 10;
+}
+.gf-tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: var(--gf-slate);
+  color: var(--gf-white);
+}
+.gf-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.gf-tile:hover img {
+  transform: scale(1.04);
+}
+.gf-tile__caption {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 48px 16px 14px;
+  background: linear-gradient(rgba(20, 38, 28, 0), rgba(20, 38, 28, 0.88));
+  font-family: var(--gf-display);
+  line-height: 1.25;
+}
+.gf-tile__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.gf-tile__count {
+  font-family: var(--gf-text);
+  font-size: 14px;
+  opacity: 0.8;
+}
+.gf-main .gf-hero__all {
+  display: block;
+  padding: 18px var(--gf-gutter);
+  background: var(--gf-green);
+  color: var(--gf-forest);
+  font-family: var(--gf-display);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+.gf-main .gf-hero__all:hover {
+  background: #3cc98b;
+}
+
+/* Services: a plain list, because it is one */
+.gf-services {
+  display: grid;
+  gap: 0 40px;
+}
+.gf-services li {
+  padding-block: 18px;
+  border-top: 1px solid var(--gf-line);
+}
+.gf-services p {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.gf-reasons {
+  display: grid;
+  gap: 32px;
+  margin-top: 40px;
+}
+.gf-reasons li {
+  padding-top: 20px;
+  border-top: 2px solid var(--gf-green);
+}
+.gf-reasons p {
+  margin-top: 8px;
+}
+
+/* Testimonials: the slider from the old site, set left-aligned on a white card */
+.gf-quotes {
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: var(--gf-radius);
+  background: var(--gf-white);
+  min-width: 0;
+}
+.gf-quotes .elementor-testimonial__text {
+  color: var(--gf-forest);
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: left;
+}
+.gf-quotes .elementor-testimonial__footer {
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.gf-quotes .elementor-testimonial__cite {
+  text-align: left;
+}
+.gf-quotes .elementor-swiper,
+.gf-quotes .swiper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+.gf-quotes .swiper {
+  padding-bottom: 52px;
+}
+.gf-quotes .swiper-pagination {
+  bottom: 14px;
+}
+/* The card follows each quote's height (the slider sets it); these are the slider's own
+   auto-height rules, which the carried-over stylesheet does not include. */
+.gf-quotes .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.gf-quotes .swiper-slide {
+  box-sizing: border-box;
+  height: auto;
+  padding: 0;
+}
+.gf-quotes .elementor-testimonial__content,
+.gf-quotes .elementor-testimonial__text {
+  padding: 0;
+}
+/* Previous and next sit under the quote, where a thumb reaches them. */
+.gf-quotes .elementor-swiper {
+  position: relative;
+}
+.gf-quotes .elementor-swiper-button {
+  position: absolute;
+  /* !important: the old theme pins these to the vertical middle with more specific selectors. */
+  top: auto !important;
+  bottom: 0 !important;
+  left: auto !important;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transform: none;
+  color: var(--gf-forest);
+  font-size: 22px;
+  cursor: pointer;
+}
+.gf-quotes .elementor-swiper-button-prev {
+  right: 48px !important;
+}
+.gf-quotes .elementor-swiper-button-next {
+  right: 0 !important;
+}
+/* The dots keep to the left, so they do not lie over the arrows and swallow their clicks. */
+.gf-quotes .swiper-pagination {
+  width: auto;
+  text-align: left;
+}
+
+.gf-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 14px 28px;
+  margin: 32px 0 0;
+}
+.gf-facts dt {
+  color: var(--gf-forest);
+  font-family: var(--gf-display);
+  font-weight: 500;
+}
+.gf-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.gf-main .gf-facts a {
+  color: var(--gf-green-deep);
+}
+
+@media (min-width: 768px) {
+  .gf-mosaic {
+    grid-template-columns: 1.35fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .gf-mosaic > :first-child {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    aspect-ratio: auto;
+  }
+  .gf-tile {
+    aspect-ratio: 4 / 3;
+  }
+  .gf-services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gf-reasons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .gf-hero {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 8fr);
+    /* Text, photos and the "all projects" bar fit one screen together. */
+    grid-template-rows: clamp(540px, calc(100vh - var(--gf-header) - 58px), 700px) auto;
+  }
+  .gf-hero__intro {
+    padding-left: max(var(--gf-gutter), calc((100vw - var(--gf-wrap)) / 2 + var(--gf-gutter)));
+  }
+  .gf-mosaic {
+    min-height: 0;
+  }
+  .gf-tile {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+  .gf-tile img {
+    position: absolute;
+    inset: 0;
+  }
+  .gf-hero__all {
+    grid-column: 1 / -1;
+  }
+  .gf-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gf-split {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 72px;
+    align-items: start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gf-tile img {
+    transition: none;
+  }
+  .gf-tile:hover img {
+    transform: none;
+  }
+}
+
+/* ---------- Part 2: shared parts, restyled ---------------------------------------------------- */
+
+/* Header: solid and always in reach, in place of the transparent bar over a stock photo. */
+body #masthead.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: var(--gf-forest);
+}
+body #masthead .main-header-bar,
+body #masthead .ast-primary-header-bar {
+  min-height: 0;
+  padding-block: 0;
+  background: transparent;
+  border: 0;
+}
+body #masthead .custom-logo {
+  width: auto;
+  max-width: none;
+  height: 60px;
+}
+body #masthead .site-branding {
+  padding-block: 12px;
+}
+/* Colours are set here, not left to the old theme's body classes, which differ from page to page. */
+body #masthead .main-header-menu .menu-link {
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--gf-display);
+  font-size: 16px;
+}
+body #masthead .main-header-menu .menu-link:hover,
+body #masthead .main-header-menu .current-menu-item > .menu-link {
+  color: var(--gf-white);
+}
+body #masthead .main-header-menu .current-menu-item > .menu-link {
+  text-decoration: underline;
+  text-decoration-color: var(--gf-green);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+body #ast-mobile-popup .main-header-menu .menu-link {
+  font-family: var(--gf-display);
+}
+body .site-footer .footer-nav-wrap .menu-link {
+  color: rgba(255, 255, 255, 0.82);
+}
+body .site-footer .footer-nav-wrap .menu-link:hover,
+body .site-footer .footer-nav-wrap .current-menu-item > .menu-link {
+  color: var(--gf-white);
+}
+/* The pages' first band no longer has to leave room for a header floating over it. */
+body:not(.gf-home) .elementor > .elementor-top-section:first-child {
+  padding-top: clamp(48px, 7vw, 88px);
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+
+/* Buttons: one shape and one voice everywhere. */
+body .elementor-button,
+body .wpforms-form .wpforms-submit,
+body .ast-button {
+  border-radius: var(--gf-radius);
+  font-family: var(--gf-display);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+body .wpforms-form input[type='text'],
+body .wpforms-form input[type='tel'],
+body .wpforms-form input[type='email'],
+body .wpforms-form textarea {
+  border-radius: var(--gf-radius);
+}
+
+/* Project grid: titles are always readable (they only showed on hover, so never on a phone),
+   and phones get two columns. */
+body .elementor-portfolio-item {
+  border-radius: var(--gf-radius);
+}
+body .elementor-portfolio-item .elementor-portfolio-item__overlay {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 48px 14px 12px;
+  background: linear-gradient(rgba(20, 38, 28, 0) 45%, rgba(20, 38, 28, 0.88));
+  opacity: 1;
+  text-align: left;
+}
+body .elementor-portfolio-item .elementor-portfolio-item__title {
+  margin: 0;
+  color: var(--gf-white);
+  font-family: var(--gf-display);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+@media (max-width: 767px) {
+  body .elementor-widget-portfolio .elementor-portfolio.elementor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+  body .elementor-portfolio-item .elementor-portfolio-item__title {
+    font-size: 14px;
+  }
+  /* Project photos: two across, so a project with 60 photos is not a 30-screen scroll. */
+  body .gallery.gallery-columns-4 .gallery-item {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Phones: calling and asking for a quote are always one tap away. */
+.gf-callbar {
+  display: none;
+}
+@media (max-width: 767px) {
+  .gf-callbar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 98;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--gf-forest);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .gf-callbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    background: var(--gf-green);
+    color: var(--gf-forest);
+    font-family: var(--gf-display);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .gf-callbar a + a {
+    background: var(--gf-forest);
+    color: var(--gf-white);
+  }
+  .gf-callbar a:only-child {
+    grid-column: 1 / -1;
+  }
+  body {
+    padding-bottom: calc(54px + env(safe-area-inset-bottom));
+  }
+}

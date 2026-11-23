@@ -11,7 +11,7 @@ const TILE_RATIO = 1.2;
 /** How wide a photo is drawn in its tile: a wide photo overflows the tile sideways to fill its height. */
 const sizesFor = (width: number, height: number) => {
   const overflow = Math.max(1, (TILE_RATIO * width) / height);
-  return `(max-width: 767px) ${Math.ceil(96 * overflow)}vw, (max-width: 1024px) ${Math.ceil(49 * overflow)}vw, ${Math.ceil(290 * overflow)}px`;
+  return `(max-width: 767px) ${Math.ceil(48 * overflow)}vw, (max-width: 1024px) ${Math.ceil(49 * overflow)}vw, ${Math.ceil(290 * overflow)}px`;
 };
 ---
 

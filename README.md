@@ -28,6 +28,11 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
   `public/assets/legacy/site-*.css` holds the old site's CSS reduced to what is used, one bundle per template
   type. `src/styles/site.css` adds the few new things (form messages, lightbox).
 - **Pages:** `src/pages/*.astro` hold the page content. Text changes are made there.
+- **Refresh (branch `refresh`):** the home page (`src/pages/index.astro`) is written fresh with `gf-` classes and
+  leads with a mosaic of the five projects that have the most photos. `src/styles/refresh.css` holds its styles
+  and restyles the shared header, buttons, project grid and gallery on the other pages. The old home page is
+  kept in `reference/home-before-refresh.astro.txt`. The layout comparison with the old site no longer applies
+  to the home page or the header.
 - **Projects:** `src/pages/verk/[slug].astro`, `src/components/ProjectGrid.astro`, `ProjectGallery.astro`.
 - **SEO:** `src/lib/seo.ts` renders Yoast's data per URL. Titles and descriptions are still edited in Yoast.
   Sitemaps keep Yoast's file names (`sitemap_index.xml`, `page-`, `verk-`, `umsogn-sitemap.xml`).

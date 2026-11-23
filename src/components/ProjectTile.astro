@@ -1,0 +1,34 @@
+---
+// One project as a photo tile with its title; used in the home page mosaic.
+import type { Project } from '../lib/wp';
+
+interface Props {
+  project: Project;
+  /** The browser's `sizes` hint for where this tile sits in its grid. */
+  sizes: string;
+  /** The first tile on the page loads ahead of everything else. */
+  priority?: boolean;
+}
+
+const { project, sizes, priority = false } = Astro.props;
+const image = project.image!;
+const shown = image.sizes.large ?? image;
+---
+
+<a class="gf-tile" href={project.path}>
+  <img
+    src={shown.url}
+    srcset={image.srcset || undefined}
+    sizes={sizes}
+    width={shown.width}
+    height={shown.height}
+    alt=""
+    loading={priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : undefined}
+    decoding="async"
+  />
+  <span class="gf-tile__caption">
+    <span class="gf-tile__title">{project.title}</span>
+    <span class="gf-tile__count">{project.gallery.length} myndir</span>
+  </span>
+</a>

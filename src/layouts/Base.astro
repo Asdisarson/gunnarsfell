@@ -3,6 +3,7 @@ import '@fontsource/karla/400.css';
 import '@fontsource/rubik/500.css';
 import '@fontsource/rubik/700.css';
 import '../styles/site.css';
+import '../styles/refresh.css';
 import Seo from '../components/Seo.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -105,6 +106,11 @@ const pixel = import.meta.env.PUBLIC_FB_PIXEL_ID;
       <MobileMenu path={path} />
       <SiteFooter path={path} />
     </div>
+    <nav class="gf-callbar" aria-label="Hafa samband">
+      <a href="tel:+3545464466">Hringja</a>
+      {/* The contact page is where this button leads, so it is left out there. */}
+      {path !== '/hafa-samband/' && <a href={path === '/' ? '#fa-tilbod' : '/hafa-samband/'}>Fá tilboð</a>}
+    </nav>
     <script>
       import '../scripts/site.ts';
     </script>
