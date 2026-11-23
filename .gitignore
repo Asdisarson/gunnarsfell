@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.env
+# Images copied from WordPress at build time (scripts/sync-media.mjs).
+public/wp-content/
+# Raw captures of the old front end; the SEO baseline and fragments next to them are kept.
+reference/html/
+reference/shots/

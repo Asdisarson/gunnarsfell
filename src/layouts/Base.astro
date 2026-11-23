@@ -1,0 +1,112 @@
+---
+import '@fontsource/karla/400.css';
+import '@fontsource/rubik/500.css';
+import '@fontsource/rubik/700.css';
+import '../styles/site.css';
+import Seo from '../components/Seo.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import MobileMenu from '../components/MobileMenu.astro';
+import { SITE_LANG, type YoastHead } from '../lib/seo';
+
+interface Props {
+  /** URL path of this page, with slashes: "/um-okkur/". */
+  path: string;
+  /** Which stylesheet bundle WordPress served for this template. */
+  type: 'page' | 'verk' | 'umsogn' | '404';
+  /** The classes WordPress put on <body>; the theme CSS is keyed on them. */
+  bodyClass: string;
+  /** Head data when the page is not one of the WordPress pages (projects, testimonials, 404). */
+  seo?: YoastHead | null;
+  fallbackDescription?: string;
+}
+
+const { path, type, bodyClass, seo, fallbackDescription } = Astro.props;
+const ga4 = import.meta.env.PUBLIC_GA4_ID;
+const pixel = import.meta.env.PUBLIC_FB_PIXEL_ID;
+---
+
+<!doctype html>
+<html lang={SITE_LANG}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Seo path={path} seo={seo} fallbackDescription={fallbackDescription} />
+    <link
+      rel="icon"
+      href="/wp-content/uploads/2023/10/cropped-295030739_165624105989106_5593384318339719160_n-32x32.jpg"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/wp-content/uploads/2023/10/cropped-295030739_165624105989106_5593384318339719160_n-192x192.jpg"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/wp-content/uploads/2023/10/cropped-295030739_165624105989106_5593384318339719160_n-180x180.jpg"
+    />
+    <link rel="stylesheet" href={`/assets/legacy/site-${type}.css`} />
+    {ga4 && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4}`} />
+        <script is:inline define:vars={{ ga4 }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', ga4, { anonymize_ip: true });
+        </script>
+      </>
+    )}
+    {pixel && <script is:inline define:vars={{ pixel }}>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', pixel);
+      fbq('track', 'PageView');
+    </script>}
+  </head>
+  <body class={bodyClass} itemtype="https://schema.org/WebPage" itemscope>
+    <script is:inline>
+      // The theme CSS switches between desktop and mobile header on this class (breakpoint 921px).
+      (function () {
+        var set = function () {
+          var mobile = window.innerWidth <= 921;
+          document.body.classList.toggle('ast-header-break-point', mobile);
+          document.body.classList.toggle('ast-desktop', !mobile);
+        };
+        set();
+        window.addEventListener('resize', set);
+      })();
+    </script>
+    <a class="skip-link screen-reader-text" href="#content">
+      Beint í efni
+    </a>
+    <div class="hfeed site" id="page">
+      <SiteHeader path={path} />
+      <div id="content" class="site-content">
+        <slot />
+      </div>
+      <MobileMenu path={path} />
+      <SiteFooter path={path} />
+    </div>
+    <script>
+      import '../scripts/site.ts';
+    </script>
+  </body>
+</html>

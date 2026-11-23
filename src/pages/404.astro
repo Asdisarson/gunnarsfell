@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import { getContent } from '../lib/wp';
+
+const { site, origin } = await getContent();
+const title = `Page not found - ${site.name}`;
+// Same head as WordPress's 404: not indexed, no canonical.
+const seo = {
+  title,
+  robots: { index: 'noindex', follow: 'follow' },
+  og_locale: 'is_IS',
+  og_title: title,
+  og_site_name: site.name,
+  schema: {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${origin}/#website`,
+        url: `${origin}/`,
+        name: site.name,
+        description: site.description,
+        inLanguage: 'en-US',
+      },
+    ],
+  },
+};
+---
+
+<Base
+  path="/404/"
+  type="404"
+  seo={seo}
+  bodyClass="error404 wp-custom-logo wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-separate-container ast-two-container ast-no-sidebar astra-4.11.7 ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky elementor-default elementor-kit-8 astra-addon-4.11.2"
+>
+  <div class="ast-container">
+    <div id="primary" class="content-area primary">
+      <section class="error-404 not-found">
+        <div class="ast-404-layout-1">
+          <header class="page-header">
+            <h1 class="page-title">Þessi síða finnst ekki.</h1>
+          </header>
+          <div class="page-content">
+            <div class="page-sub-title">Slóðin sem þú fylgdir virðist vera röng.</div>
+            <p class="gf-404-actions">
+              <a class="ast-button" href="/">
+                Fara á forsíðu
+              </a>
+              <a class="ast-button" href="/unnin-verk/">
+                Skoða unnin verk
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</Base>

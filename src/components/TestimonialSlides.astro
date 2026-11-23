@@ -1,0 +1,57 @@
+---
+// Inner markup of Elementor's testimonial carousel widget; src/scripts/site.ts turns it into a slider.
+// The texts live in src/data/testimonials.json, copied from the widgets on the old site.
+import sets from '../data/testimonials.json';
+
+interface Props {
+  set: keyof typeof sets;
+}
+
+const slides = sets[Astro.props.set];
+---
+
+<div class="elementor-swiper">
+  <div class="elementor-main-swiper swiper" role="region" aria-roledescription="carousel" aria-label="Umsagnir">
+    <div class="swiper-wrapper">
+      {slides.map((slide) => (
+        <div class="swiper-slide" role="group" aria-roledescription="slide">
+          <div class="elementor-testimonial">
+            <div class="elementor-testimonial__content">
+              <div class="elementor-testimonial__text">{slide.text}</div>
+            </div>
+            <div class="elementor-testimonial__footer">
+              <div class="elementor-testimonial__image">
+                <img decoding="async" loading="lazy" src={slide.image} alt={slide.name} />
+              </div>
+              <cite class="elementor-testimonial__cite">
+                <span class="elementor-testimonial__name">{slide.name}</span>
+                {slide.title && <span class="elementor-testimonial__title">{slide.title}</span>}
+              </cite>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    {slides.length > 1 && (
+      <>
+        <div
+          class="elementor-swiper-button elementor-swiper-button-prev"
+          role="button"
+          tabindex="0"
+          aria-label="Fyrri umsögn"
+        >
+          <i aria-hidden="true" class="eicon-chevron-left" />
+        </div>
+        <div
+          class="elementor-swiper-button elementor-swiper-button-next"
+          role="button"
+          tabindex="0"
+          aria-label="Næsta umsögn"
+        >
+          <i aria-hidden="true" class="eicon-chevron-right" />
+        </div>
+        <div class="swiper-pagination" />
+      </>
+    )}
+  </div>
+</div>

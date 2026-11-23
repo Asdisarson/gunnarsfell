@@ -1,0 +1,50 @@
+---
+import { MENU } from '../site';
+
+interface Props {
+  path: string;
+  /** Header menus carry the dropdown arrow and wrap the label; the footer menu is plain links. */
+  variant: 'header' | 'footer';
+  /** The desktop header menu also carries element ids. */
+  ids?: boolean;
+}
+
+const { path, variant, ids = false } = Astro.props;
+---
+
+{MENU.map((item) => {
+  const current = item.href === path;
+  const classes = [
+    'menu-item menu-item-type-post_type menu-item-object-page',
+    item.href === '/' && 'menu-item-home',
+    current && `current-menu-item page_item page-item-${item.pageId} current_page_item`,
+    `menu-item-${item.id}`,
+  ];
+  return (
+    <li id={ids ? `menu-item-${item.id}` : undefined} class:list={classes}>
+      <a href={item.href} class="menu-link" aria-current={current ? 'page' : undefined}>
+        {variant === 'header' ? (
+          <>
+            <span class="ast-icon icon-arrow">
+              <svg
+                class="ast-arrow-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                x="0px"
+                y="0px"
+                width="26px"
+                height="16.043px"
+                viewBox="57 35.171 26 16.043"
+              >
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
+              </svg>
+            </span>
+            <span class="menu-text">{item.label}</span>
+          </>
+        ) : (
+          item.label
+        )}
+      </a>
+    </li>
+  );
+})}

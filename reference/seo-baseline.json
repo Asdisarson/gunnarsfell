@@ -1,0 +1,3696 @@
+{
+  "origin": "http://localhost:10009",
+  "pages": {
+    "/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Iðnaðarmenn - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+        "og:locale": "en_US",
+        "og:type": "website",
+        "og:title": "Iðnaðarmenn - Gunnarsfell - Verktakar",
+        "og:description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+        "og:url": "http://localhost:10009/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-23T05:38:46+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/07/repairer-in-boilersuit-holding-tools-apartment-repair-and-renovation-concept-building--e1689258266956.jpg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/",
+              "url": "http://localhost:10009/",
+              "name": "Iðnaðarmenn - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "about": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/07/repairer-in-boilersuit-holding-tools-apartment-repair-and-renovation-concept-building--e1689258266956.jpg",
+              "datePublished": "2021-06-11T14:11:42+00:00",
+              "dateModified": "2023-10-23T05:38:46+00:00",
+              "description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/07/repairer-in-boilersuit-holding-tools-apartment-repair-and-renovation-concept-building--e1689258266956.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/07/repairer-in-boilersuit-holding-tools-apartment-repair-and-renovation-concept-building--e1689258266956.jpg",
+              "width": 500,
+              "height": 334,
+              "caption": "Repairer in boilersuit holding tools. Apartment repair and renovation concept. Building."
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/hafa-samband/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Hafa samband - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/hafa-samband/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "description": "Vertu í bandi. Við tökum að okkur verkið, við höfum reynsluna og kunnáttu á öllum sviðum",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Hafa samband - Gunnarsfell - Verktakar",
+        "og:description": "Vertu í bandi. Við tökum að okkur verkið, við höfum reynsluna og kunnáttu á öllum sviðum",
+        "og:url": "http://localhost:10009/hafa-samband/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-09-28T05:10:57+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2021/06/contact-us-1.jpg",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "1 minute"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/hafa-samband/",
+              "url": "http://localhost:10009/hafa-samband/",
+              "name": "Hafa samband - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/hafa-samband/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/hafa-samband/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2021/06/contact-us-1.jpg",
+              "datePublished": "2021-06-12T06:28:48+00:00",
+              "dateModified": "2023-09-28T05:10:57+00:00",
+              "description": "Vertu í bandi. Við tökum að okkur verkið, við höfum reynsluna og kunnáttu á öllum sviðum",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/hafa-samband/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/hafa-samband/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/hafa-samband/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2021/06/contact-us-1.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2021/06/contact-us-1.jpg",
+              "width": 500,
+              "height": 672
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/hafa-samband/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Hafa samband"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/thjonusta/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Þjónusta - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/thjonusta/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Þjónusta - Gunnarsfell - Verktakar",
+        "og:description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+        "og:url": "http://localhost:10009/thjonusta/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-23T05:42:37+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "7 minutes"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/thjonusta/",
+              "url": "http://localhost:10009/thjonusta/",
+              "name": "Þjónusta - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/thjonusta/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/thjonusta/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg",
+              "datePublished": "2021-06-12T06:25:44+00:00",
+              "dateModified": "2023-10-23T05:42:37+00:00",
+              "description": "Við höfum víðtæka reynslu og erum í nánu samstarfi við marga iðnaðarmenn sem kemur sér vel þar sem við tökum að okkur fjölbreytileg verk",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/thjonusta/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/thjonusta/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/thjonusta/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/10/Vidhald-og-endurnyjun-1.jpg",
+              "width": 721,
+              "height": 721
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/thjonusta/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Þjónusta"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/um-okkur/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Um okkur - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/um-okkur/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Um okkur - Gunnarsfell - Verktakar",
+        "og:description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+        "og:url": "http://localhost:10009/um-okkur/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2025-11-27T14:00:43+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2025/11/fyrirmyndar.png",
+        "og:image:width": "476",
+        "og:image:height": "348",
+        "og:image:type": "image/png",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "3 minutes"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/um-okkur/",
+              "url": "http://localhost:10009/um-okkur/",
+              "name": "Um okkur - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/um-okkur/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/um-okkur/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2025/11/fyrirmyndar.png",
+              "datePublished": "2021-06-12T06:25:18+00:00",
+              "dateModified": "2025-11-27T14:00:43+00:00",
+              "description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/um-okkur/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/um-okkur/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/um-okkur/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2025/11/fyrirmyndar.png",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2025/11/fyrirmyndar.png",
+              "width": 476,
+              "height": 348
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/um-okkur/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Um okkur"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/umsagnir/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Umsagnir - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/umsagnir/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Umsagnir - Gunnarsfell - Verktakar",
+        "og:description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+        "og:url": "http://localhost:10009/umsagnir/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-09T12:36:26+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "3 minutes"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/umsagnir/",
+              "url": "http://localhost:10009/umsagnir/",
+              "name": "Umsagnir - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/umsagnir/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/umsagnir/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "datePublished": "2023-10-09T08:08:59+00:00",
+              "dateModified": "2023-10-09T12:36:26+00:00",
+              "description": "Gunnarsfell ehf er lítið verktakafyrirtæki sem var stofnað árið 2008.",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/umsagnir/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/umsagnir/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/umsagnir/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "width": 790,
+              "height": 772
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/umsagnir/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Umsagnir"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/umsogn/arnar-gauti/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Arnar Gauti - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/umsogn/arnar-gauti/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Arnar Gauti - Gunnarsfell - Verktakar",
+        "og:description": "Ég hef unnið með Gunnari eiganda Gunnarsfell í um 2 ár núna og sem upplifunarhönnuður hafa verkefnin mín aldrei gengið jafnvel og áður og ánægja viðskiptavina minna er mikil með vönduð vinnubrögð, tímalínur standast alltaf og lausn flókna mála hefur aldrei stoppað strákana hjá Gunnarsfell.  Enginn verktaki hefur þetta mind sett sem ég hef unnið […]",
+        "og:url": "http://localhost:10009/umsogn/arnar-gauti/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-09T05:17:03+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/Arnar-Gauti.jpeg",
+        "og:image:width": "905",
+        "og:image:height": "1280",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "1 minute"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/umsogn/arnar-gauti/",
+              "url": "http://localhost:10009/umsogn/arnar-gauti/",
+              "name": "Arnar Gauti - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/umsogn/arnar-gauti/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/umsogn/arnar-gauti/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/Arnar-Gauti.jpeg",
+              "datePublished": "2023-10-09T05:09:16+00:00",
+              "dateModified": "2023-10-09T05:17:03+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/umsogn/arnar-gauti/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/umsogn/arnar-gauti/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/umsogn/arnar-gauti/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/Arnar-Gauti.jpeg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/Arnar-Gauti.jpeg",
+              "width": 905,
+              "height": 1280
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/umsogn/arnar-gauti/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Arnar Gauti"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/umsogn/gudrun-m-ornolfsdottir/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Guðrún M. Örnólfsdóttir - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Guðrún M. Örnólfsdóttir - Gunnarsfell - Verktakar",
+        "og:description": "Framkvæmdastjóri Orgus ehf.",
+        "og:url": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-09T05:15:46+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+        "og:image:width": "790",
+        "og:image:height": "772",
+        "og:image:type": "image/png",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "1 minute"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/",
+              "url": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/",
+              "name": "Guðrún M. Örnólfsdóttir - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "datePublished": "2023-10-09T05:09:56+00:00",
+              "dateModified": "2023-10-09T05:15:46+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/Gudrun_Orgus.png",
+              "width": 790,
+              "height": 772
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/umsogn/gudrun-m-ornolfsdottir/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Guðrún M. Örnólfsdóttir"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/umsogn/ragnar-sigurdsson/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Ragnar Sigurðsson - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/umsogn/ragnar-sigurdsson/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Ragnar Sigurðsson - Gunnarsfell - Verktakar",
+        "og:description": "Innanhússarkitekt FHI",
+        "og:url": "http://localhost:10009/umsogn/ragnar-sigurdsson/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-09T05:15:10+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/Ragnar_Sig.jpg",
+        "og:image:width": "1366",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "1 minute"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/",
+              "url": "http://localhost:10009/umsogn/ragnar-sigurdsson/",
+              "name": "Ragnar Sigurðsson - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/Ragnar_Sig.jpg",
+              "datePublished": "2023-10-09T05:06:30+00:00",
+              "dateModified": "2023-10-09T05:15:10+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/umsogn/ragnar-sigurdsson/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/Ragnar_Sig.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/Ragnar_Sig.jpg",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/umsogn/ragnar-sigurdsson/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ragnar Sigurðsson"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/unnin-verk/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Unnin verk - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/unnin-verk/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Unnin verk - Gunnarsfell - Verktakar",
+        "og:description": "Unnin verk",
+        "og:url": "http://localhost:10009/unnin-verk/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-10-23T05:33:30+00:00",
+        "twitter:card": "summary_large_image",
+        "twitter:label1": "Est. reading time",
+        "twitter:data1": "5 minutes"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/unnin-verk/",
+              "url": "http://localhost:10009/unnin-verk/",
+              "name": "Unnin verk - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "datePublished": "2021-06-12T06:28:22+00:00",
+              "dateModified": "2023-10-23T05:33:30+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/unnin-verk/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/unnin-verk/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/unnin-verk/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Unnin verk"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/badherbergi-a-hofudborgarsvaedinu/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Baðherbergi á höfuðborgarsvæðinu - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Baðherbergi á höfuðborgarsvæðinu - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/357278622_1439223919978613_8119976206784808641_n.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "1536",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/",
+              "url": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/",
+              "name": "Baðherbergi á höfuðborgarsvæðinu - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/357278622_1439223919978613_8119976206784808641_n.jpg",
+              "datePublished": "2023-09-27T19:09:44+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/357278622_1439223919978613_8119976206784808641_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/357278622_1439223919978613_8119976206784808641_n.jpg",
+              "width": 2048,
+              "height": 1536
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/badherbergi-a-hofudborgarsvaedinu/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Baðherbergi á höfuðborgarsvæðinu"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/badherbergi/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Baðherbergi - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/badherbergi/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Baðherbergi - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/badherbergi/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-09-27T19:10:30+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1860.jpg",
+        "og:image:width": "1080",
+        "og:image:height": "1920",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/badherbergi/",
+              "url": "http://localhost:10009/verk/badherbergi/",
+              "name": "Baðherbergi - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/badherbergi/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/badherbergi/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1860.jpg",
+              "datePublished": "2023-09-27T19:06:06+00:00",
+              "dateModified": "2023-09-27T19:10:30+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/badherbergi/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/badherbergi/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/badherbergi/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1860.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1860.jpg",
+              "width": 1080,
+              "height": 1920
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/badherbergi/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Baðherbergi"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/efri-haed-i-kopavoginum/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Efri hæð í Kópavoginum - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/efri-haed-i-kopavoginum/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Efri hæð í Kópavoginum - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/efri-haed-i-kopavoginum/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/IMG_4661.jpeg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/",
+              "url": "http://localhost:10009/verk/efri-haed-i-kopavoginum/",
+              "name": "Efri hæð í Kópavoginum - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_4661.jpeg",
+              "datePublished": "2023-09-27T19:26:18+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/efri-haed-i-kopavoginum/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/IMG_4661.jpeg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_4661.jpeg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/efri-haed-i-kopavoginum/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Efri hæð í Kópavoginum"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/gamall-solpallur-endurgerdur/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Gamall sólpallur endurgerður - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Gamall sólpallur endurgerður - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "article:modified_time": "2023-09-27T19:34:17+00:00",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/364547385_1624990444675097_8929669279202177963_n.jpg",
+        "og:image:width": "1532",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/",
+              "url": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/",
+              "name": "Gamall sólpallur endurgerður - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/364547385_1624990444675097_8929669279202177963_n.jpg",
+              "datePublished": "2023-09-27T19:32:07+00:00",
+              "dateModified": "2023-09-27T19:34:17+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/gamall-solpallur-endurgerdur/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/364547385_1624990444675097_8929669279202177963_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/364547385_1624990444675097_8929669279202177963_n.jpg",
+              "width": 1532,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/gamall-solpallur-endurgerdur/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Gamall sólpallur endurgerður"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/hladinn-steinveggur/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Hlaðinn Steinveggur - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/hladinn-steinveggur/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Hlaðinn Steinveggur - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/hladinn-steinveggur/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1008-1.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/hladinn-steinveggur/",
+              "url": "http://localhost:10009/verk/hladinn-steinveggur/",
+              "name": "Hlaðinn Steinveggur - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/hladinn-steinveggur/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/hladinn-steinveggur/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1008-1.jpg",
+              "datePublished": "2023-09-27T19:33:13+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/hladinn-steinveggur/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/hladinn-steinveggur/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/hladinn-steinveggur/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1008-1.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1008-1.jpg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/hladinn-steinveggur/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Hlaðinn Steinveggur"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/hotel-a-sudurlandi/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Hótel á suðurlandi - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/hotel-a-sudurlandi/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Hótel á suðurlandi - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/hotel-a-sudurlandi/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/367420263_1815054712247170_1434123711460160833_n.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "1536",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/",
+              "url": "http://localhost:10009/verk/hotel-a-sudurlandi/",
+              "name": "Hótel á suðurlandi - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/367420263_1815054712247170_1434123711460160833_n.jpg",
+              "datePublished": "2023-09-27T19:38:20+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/hotel-a-sudurlandi/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/367420263_1815054712247170_1434123711460160833_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/367420263_1815054712247170_1434123711460160833_n.jpg",
+              "width": 2048,
+              "height": 1536
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/hotel-a-sudurlandi/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Hótel á suðurlandi"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/litid-badherbergi/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Lítið baðherbergi - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/litid-badherbergi/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Lítið baðherbergi - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/litid-badherbergi/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/324980939_557572436274321_4558573092927711754_n.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/litid-badherbergi/",
+              "url": "http://localhost:10009/verk/litid-badherbergi/",
+              "name": "Lítið baðherbergi - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/litid-badherbergi/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/litid-badherbergi/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/324980939_557572436274321_4558573092927711754_n.jpg",
+              "datePublished": "2023-09-27T19:39:13+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/litid-badherbergi/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/litid-badherbergi/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/litid-badherbergi/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/324980939_557572436274321_4558573092927711754_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/324980939_557572436274321_4558573092927711754_n.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/litid-badherbergi/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Lítið baðherbergi"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/lod-i-midbaenum/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Lóð í miðbænum - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/lod-i-midbaenum/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Lóð í miðbænum - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/lod-i-midbaenum/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/366776741_640640964708730_748729924902717601_n.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/lod-i-midbaenum/",
+              "url": "http://localhost:10009/verk/lod-i-midbaenum/",
+              "name": "Lóð í miðbænum - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/lod-i-midbaenum/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/lod-i-midbaenum/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/366776741_640640964708730_748729924902717601_n.jpg",
+              "datePublished": "2023-09-27T19:40:30+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/lod-i-midbaenum/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/lod-i-midbaenum/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/lod-i-midbaenum/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/366776741_640640964708730_748729924902717601_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/366776741_640640964708730_748729924902717601_n.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/lod-i-midbaenum/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Lóð í miðbænum"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/mottaka-a-hoteli-i-reykjavik/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Móttaka á hóteli í Reykjavík - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Móttaka á hóteli í Reykjavík - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/333417971_1259894211542641_5740176561860322378_n.jpg",
+        "og:image:width": "1920",
+        "og:image:height": "1080",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/",
+              "url": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/",
+              "name": "Móttaka á hóteli í Reykjavík - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/333417971_1259894211542641_5740176561860322378_n.jpg",
+              "datePublished": "2023-09-27T19:42:36+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/333417971_1259894211542641_5740176561860322378_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/333417971_1259894211542641_5740176561860322378_n.jpg",
+              "width": 1920,
+              "height": 1080
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/mottaka-a-hoteli-i-reykjavik/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Móttaka á hóteli í Reykjavík"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/nyr-solpallur/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Nýr Sólpallur - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/nyr-solpallur/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Nýr Sólpallur - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/nyr-solpallur/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/357329650_1478709039532067_4300635540738360215_n.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "1536",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/nyr-solpallur/",
+              "url": "http://localhost:10009/verk/nyr-solpallur/",
+              "name": "Nýr Sólpallur - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/nyr-solpallur/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/nyr-solpallur/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/357329650_1478709039532067_4300635540738360215_n.jpg",
+              "datePublished": "2023-09-27T19:44:07+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/nyr-solpallur/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/nyr-solpallur/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/nyr-solpallur/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/357329650_1478709039532067_4300635540738360215_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/357329650_1478709039532067_4300635540738360215_n.jpg",
+              "width": 2048,
+              "height": 1536
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/nyr-solpallur/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Nýr Sólpallur"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/parketlogn-a-veislusal/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Parketlögn á veislusal - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/parketlogn-a-veislusal/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Parketlögn á veislusal - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/parketlogn-a-veislusal/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/330389654_551411680388342_5731924330675221370_n.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/",
+              "url": "http://localhost:10009/verk/parketlogn-a-veislusal/",
+              "name": "Parketlögn á veislusal - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/330389654_551411680388342_5731924330675221370_n.jpg",
+              "datePublished": "2023-09-27T19:45:06+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/parketlogn-a-veislusal/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/330389654_551411680388342_5731924330675221370_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/330389654_551411680388342_5731924330675221370_n.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veislusal/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Parketlögn á veislusal"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/parketlogn-a-veitingastad/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Parketlögn á veitingastað - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/parketlogn-a-veitingastad/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Parketlögn á veitingastað - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/parketlogn-a-veitingastad/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/331960557_613731407232091_1482722078067375411_n.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/",
+              "url": "http://localhost:10009/verk/parketlogn-a-veitingastad/",
+              "name": "Parketlögn á veitingastað - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/331960557_613731407232091_1482722078067375411_n.jpg",
+              "datePublished": "2023-09-27T19:46:08+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/parketlogn-a-veitingastad/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/331960557_613731407232091_1482722078067375411_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/331960557_613731407232091_1482722078067375411_n.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/parketlogn-a-veitingastad/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Parketlögn á veitingastað"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/parketlogn-i-kopavogi/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Parketlögn í Kópavogi - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/parketlogn-i-kopavogi/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Parketlögn í Kópavogi - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/parketlogn-i-kopavogi/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/350239901_807738764060735_8172473415255277558_n.jpg",
+        "og:image:width": "1080",
+        "og:image:height": "1920",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/",
+              "url": "http://localhost:10009/verk/parketlogn-i-kopavogi/",
+              "name": "Parketlögn í Kópavogi - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/350239901_807738764060735_8172473415255277558_n.jpg",
+              "datePublished": "2023-09-27T19:47:18+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/parketlogn-i-kopavogi/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/350239901_807738764060735_8172473415255277558_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/350239901_807738764060735_8172473415255277558_n.jpg",
+              "width": 1080,
+              "height": 1920
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/parketlogn-i-kopavogi/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Parketlögn í Kópavogi"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/pottagrind/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Pottagrind - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/pottagrind/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Pottagrind - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/pottagrind/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/337181855_604241578235801_6414199500614736352_n.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "1536",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/pottagrind/",
+              "url": "http://localhost:10009/verk/pottagrind/",
+              "name": "Pottagrind - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/pottagrind/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/pottagrind/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/337181855_604241578235801_6414199500614736352_n.jpg",
+              "datePublished": "2023-09-27T19:48:21+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/pottagrind/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/pottagrind/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/pottagrind/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/337181855_604241578235801_6414199500614736352_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/337181855_604241578235801_6414199500614736352_n.jpg",
+              "width": 2048,
+              "height": 1536
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/pottagrind/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Pottagrind"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/reclaim-hurd/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Reclaim hurð - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/reclaim-hurd/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Reclaim hurð - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/reclaim-hurd/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/342735462_1366388487534429_3678694207160519128_n.jpg",
+        "og:image:width": "1080",
+        "og:image:height": "1920",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/reclaim-hurd/",
+              "url": "http://localhost:10009/verk/reclaim-hurd/",
+              "name": "Reclaim hurð - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/reclaim-hurd/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/reclaim-hurd/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/342735462_1366388487534429_3678694207160519128_n.jpg",
+              "datePublished": "2023-09-27T19:50:15+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/reclaim-hurd/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/reclaim-hurd/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/reclaim-hurd/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/342735462_1366388487534429_3678694207160519128_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/342735462_1366388487534429_3678694207160519128_n.jpg",
+              "width": 1080,
+              "height": 1920
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/reclaim-hurd/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Reclaim hurð"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/reclaim-wood-klaedning/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Reclaim Wood klæðning - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/reclaim-wood-klaedning/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Reclaim Wood klæðning - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/reclaim-wood-klaedning/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/346110705_551307093840491_2766141061642618335_n.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/",
+              "url": "http://localhost:10009/verk/reclaim-wood-klaedning/",
+              "name": "Reclaim Wood klæðning - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/346110705_551307093840491_2766141061642618335_n.jpg",
+              "datePublished": "2023-09-27T19:51:40+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/reclaim-wood-klaedning/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/346110705_551307093840491_2766141061642618335_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/346110705_551307093840491_2766141061642618335_n.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/reclaim-wood-klaedning/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Reclaim Wood klæðning"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/ruslatunnuskyli/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Ruslatunnuskýli - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/ruslatunnuskyli/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Ruslatunnuskýli - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/ruslatunnuskyli/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/342487345_1271572293568238_1914129694810121195_n.jpg",
+        "og:image:width": "1920",
+        "og:image:height": "1080",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/ruslatunnuskyli/",
+              "url": "http://localhost:10009/verk/ruslatunnuskyli/",
+              "name": "Ruslatunnuskýli - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/ruslatunnuskyli/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/ruslatunnuskyli/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/342487345_1271572293568238_1914129694810121195_n.jpg",
+              "datePublished": "2023-09-27T19:53:03+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/ruslatunnuskyli/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/ruslatunnuskyli/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/ruslatunnuskyli/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/342487345_1271572293568238_1914129694810121195_n.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/342487345_1271572293568238_1914129694810121195_n.jpg",
+              "width": 1920,
+              "height": 1080
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/ruslatunnuskyli/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ruslatunnuskýli"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/sersmidadar-troppur/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Sérsmíðaðar tröppur - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/sersmidadar-troppur/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Sérsmíðaðar tröppur - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/sersmidadar-troppur/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1733.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/sersmidadar-troppur/",
+              "url": "http://localhost:10009/verk/sersmidadar-troppur/",
+              "name": "Sérsmíðaðar tröppur - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/sersmidadar-troppur/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/sersmidadar-troppur/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1733.jpg",
+              "datePublished": "2023-09-27T19:56:19+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/sersmidadar-troppur/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/sersmidadar-troppur/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/sersmidadar-troppur/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1733.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/IMG_1733.jpg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/sersmidadar-troppur/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Sérsmíðaðar tröppur"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/staekkun-a-sumarhusi/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Stækkun á sumarhúsi - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/staekkun-a-sumarhusi/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Stækkun á sumarhúsi - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/staekkun-a-sumarhusi/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "og:image": "http://localhost:10009/wp-content/uploads/2023/09/333287207_934583167897338_1559495616939591327_n-1.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:image:type": "image/jpeg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/",
+              "url": "http://localhost:10009/verk/staekkun-a-sumarhusi/",
+              "name": "Stækkun á sumarhúsi - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:10009/wp-content/uploads/2023/09/333287207_934583167897338_1559495616939591327_n-1.jpg",
+              "datePublished": "2023-09-27T19:59:44+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/staekkun-a-sumarhusi/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/#primaryimage",
+              "url": "http://localhost:10009/wp-content/uploads/2023/09/333287207_934583167897338_1559495616939591327_n-1.jpg",
+              "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/333287207_934583167897338_1559495616939591327_n-1.jpg",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/staekkun-a-sumarhusi/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Stækkun á sumarhúsi"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/verk/sumarhus-sudurland/": {
+      "status": 200,
+      "lang": "en-US",
+      "title": "Sumarhús Suðurland - Gunnarsfell - Verktakar",
+      "canonical": "http://localhost:10009/verk/sumarhus-sudurland/",
+      "meta": {
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "og:locale": "en_US",
+        "og:type": "article",
+        "og:title": "Sumarhús Suðurland - Gunnarsfell - Verktakar",
+        "og:url": "http://localhost:10009/verk/sumarhus-sudurland/",
+        "og:site_name": "Gunnarsfell - Verktakar",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:10009/verk/sumarhus-sudurland/",
+              "url": "http://localhost:10009/verk/sumarhus-sudurland/",
+              "name": "Sumarhús Suðurland - Gunnarsfell - Verktakar",
+              "isPartOf": {
+                "@id": "http://localhost:10009/#website"
+              },
+              "datePublished": "2023-09-27T20:00:54+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:10009/verk/sumarhus-sudurland/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:10009/verk/sumarhus-sudurland/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:10009/verk/sumarhus-sudurland/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:10009/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Sumarhús Suðurland"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "/thessi-sida-er-ekki-til/": {
+      "status": 404,
+      "lang": "en-US",
+      "title": "Page not found - Gunnarsfell - Verktakar",
+      "canonical": "",
+      "meta": {
+        "robots": "noindex, follow",
+        "og:locale": "en_US",
+        "og:title": "Page not found - Gunnarsfell - Verktakar",
+        "og:site_name": "Gunnarsfell - Verktakar"
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:10009/#website",
+              "url": "http://localhost:10009/",
+              "name": "Gunnarsfell - Verktakar",
+              "description": "Allt á einum stað",
+              "publisher": {
+                "@id": "http://localhost:10009/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:10009/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:10009/#organization",
+              "name": "Gunnarsfell - Verktakar",
+              "url": "http://localhost:10009/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "http://localhost:10009/#/schema/logo/image/",
+                "url": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "contentUrl": "http://localhost:10009/wp-content/uploads/2023/09/gunnarsfell-logo.png",
+                "width": 749,
+                "height": 391,
+                "caption": "Gunnarsfell - Verktakar"
+              },
+              "image": {
+                "@id": "http://localhost:10009/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

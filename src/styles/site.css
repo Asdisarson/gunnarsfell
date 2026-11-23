@@ -1,0 +1,123 @@
+/* Additions on top of the stylesheets carried over from the WordPress theme (public/assets/legacy). */
+
+/* Contact forms: honeypot, messages. */
+.gf-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.gf-form-error {
+  margin: 10px 0 0;
+  color: #d63637;
+  font-size: 14px;
+}
+.gf-form-success {
+  margin: 0 0 24px;
+  padding: 15px;
+  border: 1px solid #b4d39b;
+  background: #e0ffc7;
+  color: #333;
+}
+.wpforms-form input.gf-invalid,
+.wpforms-form textarea.gf-invalid {
+  border-color: #d63637;
+}
+.wpforms-form .wpforms-submit[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Project description (optional field in WordPress). */
+.gf-project-description {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.gf-404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/* Gallery lightbox. */
+.gf-lightbox {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.gf-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.gf-lightbox[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gf-lightbox img {
+  max-width: 92vw;
+  max-height: 86dvh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.3),
+    0 0 8px -5px rgba(0, 0, 0, 0.3);
+}
+.gf-lightbox button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.75;
+  box-shadow: none;
+}
+.gf-lightbox button:hover,
+.gf-lightbox button:focus-visible {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.gf-lightbox [data-close] {
+  top: 8px;
+  right: 8px;
+}
+.gf-lightbox [data-prev] {
+  left: 8px;
+  top: calc(50% - 24px);
+}
+.gf-lightbox [data-next] {
+  right: 8px;
+  top: calc(50% - 24px);
+}
+.gf-lightbox-count {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  opacity: 0.75;
+}
+.gallery[data-lightbox] a {
+  cursor: zoom-in;
+}

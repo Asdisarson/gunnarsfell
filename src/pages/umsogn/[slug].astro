@@ -1,0 +1,87 @@
+---
+// A single testimonial. These pages exist in the old sitemap, so they keep their URLs.
+import Base from '../../layouts/Base.astro';
+import { getContent, type Testimonial } from '../../lib/wp';
+
+export async function getStaticPaths() {
+  const { umsogn } = await getContent();
+  return umsogn.map((testimonial, i) => ({
+    params: { slug: testimonial.slug },
+    props: { testimonial, previous: umsogn[i - 1], next: umsogn[i + 1] },
+  }));
+}
+
+interface Props {
+  testimonial: Testimonial;
+  previous?: Testimonial;
+  next?: Testimonial;
+}
+
+const { testimonial, previous, next } = Astro.props;
+const published = new Date(testimonial.date).toLocaleDateString('is-IS', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Base
+  path={testimonial.path}
+  type="umsogn"
+  seo={testimonial.seo}
+  bodyClass={`wp-singular umsogn-template-default single single-umsogn postid-${testimonial.id} wp-custom-logo wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-separate-container ast-two-container ast-no-sidebar astra-4.11.7 ast-blog-single-style-1 ast-custom-post-type ast-single-post ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky ast-normal-title-enabled elementor-default elementor-kit-8 astra-addon-4.11.2`}
+>
+  <div class="ast-container">
+    <div id="primary" class="content-area primary">
+      <main id="main" class="site-main">
+        <article
+          class={`post-${testimonial.id} umsogn type-umsogn status-publish has-post-thumbnail hentry ast-article-single`}
+          id={`post-${testimonial.id}`}
+          itemtype="https://schema.org/CreativeWork"
+          itemscope
+        >
+          <div class="ast-post-format- single-layout-1 ast-no-date-box">
+            <header class="entry-header">
+              <h1 class="entry-title" itemprop="headline">
+                {testimonial.title}
+              </h1>
+              <div class="entry-meta">
+                {testimonial.role && <>{testimonial.role} / </>}
+                <span class="posted-on">
+                  <span class="published" itemprop="datePublished">
+                    {published}
+                  </span>
+                </span>
+              </div>
+            </header>
+            <div class="entry-content clear" itemprop="text" set:html={testimonial.content} />
+          </div>
+        </article>
+        <nav class="navigation post-navigation" aria-label="Umsagnir">
+          <div class="nav-links">
+            {previous && (
+              <div class="nav-previous">
+                <a title={previous.title} href={previous.path} rel="prev">
+                  <span class="ast-left-arrow" aria-hidden="true">
+                    ←
+                  </span>{' '}
+                  Fyrri umsögn
+                </a>
+              </div>
+            )}
+            {next && (
+              <div class="nav-next">
+                <a title={next.title} href={next.path} rel="next">
+                  Næsta umsögn{' '}
+                  <span class="ast-right-arrow" aria-hidden="true">
+                    →
+                  </span>
+                </a>
+              </div>
+            )}
+          </div>
+        </nav>
+      </main>
+    </div>
+  </div>
+</Base>

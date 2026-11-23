@@ -1,0 +1,53 @@
+---
+// The "Unnin verk" grid: every published project from WordPress, by title.
+import { getContent } from '../lib/wp';
+
+const { verk } = await getContent();
+
+// Tiles are cropped to this height/width ratio (the old grid's setting). A photo that is wider than
+// the tile fills its height; a taller one fills its width. Elementor decided this in the browser.
+const TILE_RATIO = 1.2;
+---
+
+<div class="elementor-portfolio elementor-grid elementor-posts-container elementor-has-item-ratio" role="list">
+  {verk.map((project, i) => {
+    const image = project.image;
+    const large = image?.sizes.large ?? image;
+    return (
+      <article
+        class:list={[
+          `elementor-portfolio-item elementor-post post-${project.id} verk type-verk status-publish hentry elementor-active`,
+          image && 'has-post-thumbnail',
+        ]}
+        role="listitem"
+      >
+        <a class="elementor-post__thumbnail__link" href={project.path}>
+          <div
+            class:list={[
+              'elementor-portfolio-item__img elementor-post__thumbnail',
+              large && large.height / large.width < TILE_RATIO && 'elementor-fit-height',
+            ]}
+          >
+            {image && large && (
+              <img
+                fetchpriority={i === 0 ? 'high' : undefined}
+                loading={i < 4 ? undefined : 'lazy'}
+                decoding="async"
+                width={large.width}
+                height={large.height}
+                src={large.url}
+                class={`attachment-large size-large wp-image-${image.id}`}
+                alt={image.alt}
+                srcset={image.srcset || undefined}
+                sizes={`(max-width: ${large.width}px) 100vw, ${large.width}px`}
+              />
+            )}
+          </div>
+          <div class="elementor-portfolio-item__overlay">
+            <h3 class="elementor-portfolio-item__title">{project.title}</h3>
+          </div>
+        </a>
+      </article>
+    );
+  })}
+</div>

@@ -1,0 +1,37 @@
+---
+import { buildHead, type YoastHead } from '../lib/seo';
+import { getContent, getPage } from '../lib/wp';
+import { FALLBACK_DESCRIPTIONS, LOGO } from '../site';
+
+interface Props {
+  path: string;
+  /** Defaults to the WordPress page at `path`. */
+  seo?: YoastHead | null;
+  fallbackDescription?: string;
+}
+
+const { path, fallbackDescription } = Astro.props;
+const seo = Astro.props.seo ?? (await getPage(path))?.seo;
+if (!seo) throw new Error(`No SEO data for ${path}: is the page published in WordPress and Yoast active?`);
+
+const { origin } = await getContent();
+const tags = buildHead(seo, {
+  wpOrigin: origin,
+  siteUrl: Astro.site!.origin,
+  fallbackDescription: fallbackDescription ?? FALLBACK_DESCRIPTIONS[path],
+  // A 404 has no canonical and shares nothing.
+  fallbackImage: seo.canonical ? LOGO : undefined,
+});
+---
+
+{tags.map(({ tag, attrs, content }) =>
+  tag === 'title' ? (
+    <title>{content}</title>
+  ) : tag === 'script' ? (
+    <script is:inline type="application/ld+json" set:html={content} />
+  ) : tag === 'link' ? (
+    <link {...attrs} />
+  ) : (
+    <meta {...attrs} />
+  ),
+)}

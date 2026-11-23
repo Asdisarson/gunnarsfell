@@ -1,0 +1,41 @@
+---
+// A project's optional description and its photos, in the markup of the WordPress gallery it replaces.
+// Clicking a photo opens the lightbox (src/scripts/site.ts).
+import type { Project } from '../lib/wp';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+{project.description && <p class="gf-project-description">{project.description}</p>}
+{project.gallery.length > 0 && (
+  <div class="elementor-image-gallery">
+    <div id="gallery-1" class={`gallery galleryid-${project.id} gallery-columns-4 gallery-size-large`} data-lightbox>
+      {project.gallery.map((image, i) => {
+        const large = image.sizes.large ?? image;
+        return (
+          <figure class="gallery-item">
+            <div class:list={['gallery-icon', image.height > image.width ? 'portrait' : 'landscape']}>
+              <a href={image.url} data-width={image.width} data-height={image.height}>
+                <img
+                  width={large.width}
+                  height={large.height}
+                  src={large.url}
+                  class="attachment-large size-large"
+                  alt={image.alt || `${project.title} – mynd ${i + 1}`}
+                  decoding="async"
+                  loading={i < 4 ? undefined : 'lazy'}
+                  srcset={image.srcset || undefined}
+                  sizes={`(max-width: ${large.width}px) 100vw, ${large.width}px`}
+                />
+              </a>
+            </div>
+          </figure>
+        );
+      })}
+    </div>
+  </div>
+)}
