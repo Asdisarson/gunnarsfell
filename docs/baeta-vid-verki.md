@@ -28,6 +28,21 @@ Smelltu á **Add to gallery**, veldu allar myndirnar í einu (eða dragðu þær
 
 Verkið birtist á síðunni **Unnin verk** og fær sína eigin síðu eftir 1–2 mínútur.
 
+## Að velja hvaða verk birtast efst á forsíðunni
+
+Stóru myndirnar efst á forsíðunni sýna fimm verk. Þú ræður hvaða verk það eru:
+
+1. Opnaðu verkið í listanum **Verkin**.
+2. Hægra megin, undir **Forsíða**, stillir þú **Sýna á forsíðu** á **Já**.
+3. Smelltu á **Update**.
+
+![Sýna á forsíðu](img/4-forsida.png)
+
+- Í listanum **Verkin** sýnir dálkurinn **Á forsíðu** hvaða verk eru valin.
+- Veljir þú færri en fimm verk fyllir vefurinn upp með þeim verkum sem hafa flestar myndir.
+- Veljir þú fleiri en fimm birtast þau fyrstu fimm (í stafrófsröð) efst og næstu fjögur í röðinni þar fyrir neðan. Fleiri en níu komast ekki á forsíðuna.
+- Til að taka verk af forsíðunni stillir þú á **Nei** og smellir á **Update**.
+
 ## Að breyta eða eyða verki
 
 Smelltu á verkið í listanum. Breyttu því sem þú vilt og smelltu á **Update**, eða á **Move to Trash** til að taka það af vefnum.

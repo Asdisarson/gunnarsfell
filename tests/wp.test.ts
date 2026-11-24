@@ -30,7 +30,7 @@ const raw: SiteContent = {
   origin: `${WP}/`,
   site: { name: 'n', description: 'd' },
   pages: [],
-  verk: [{ ...entry, description: '', gallery: [image] }],
+  verk: [{ ...entry, description: '', gallery: [image], featured: false }],
   umsogn: [],
 };
 

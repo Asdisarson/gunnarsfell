@@ -31,6 +31,8 @@ export interface Entry {
 export interface Project extends Entry {
   description: string;
   gallery: WpImage[];
+  /** Ticked by the client: show this project in the home page's opening photos. */
+  featured: boolean;
 }
 
 export interface Testimonial extends Entry {

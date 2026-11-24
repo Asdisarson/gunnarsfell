@@ -35,6 +35,7 @@ const content: SiteContent = {
       image: image('/wp-content/uploads/a.jpg'),
       description: '',
       gallery: [image('/wp-content/uploads/a.jpg'), image('/wp-content/uploads/b&c.jpg')],
+      featured: false,
     },
   ],
   umsogn: [],

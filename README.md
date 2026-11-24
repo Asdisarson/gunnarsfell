@@ -29,6 +29,8 @@ optional `PUBLIC_GA4_ID` and `PUBLIC_FB_PIXEL_ID`.
   type. `src/styles/site.css` adds the few new things (form messages, lightbox).
 - **Pages:** `src/pages/*.astro` hold the page content. Text changes are made there.
 - **Projects:** `src/pages/verk/[slug].astro`, `src/components/ProjectGrid.astro`, `ProjectGallery.astro`.
+  The home page's opening photos show the projects ticked "Sýna á forsíðu" in WordPress (meta `a_forsidu`),
+  filled up to five with the projects that have the most photos (`featuredProjects` in `src/lib/projects.ts`).
 - **SEO:** `src/lib/seo.ts` renders Yoast's data per URL. Titles and descriptions are still edited in Yoast.
   Sitemaps keep Yoast's file names (`sitemap_index.xml`, `page-`, `verk-`, `umsogn-sitemap.xml`).
 - **Images:** served from `/wp-content/uploads/...`, the same URLs as before. `scripts/sync-media.mjs` copies

@@ -1,6 +1,6 @@
 ---
 // One project as a photo tile with its title and photo count; used wherever projects are listed.
-import { photoCount } from '../lib/projects';
+import { coverOf, photoCount } from '../lib/projects';
 import type { Project } from '../lib/wp';
 
 interface Props {
@@ -16,8 +16,7 @@ interface Props {
 }
 
 const { project, sizes, eager = false, heading, label } = Astro.props;
-// A project saved without a cover photo shows its first photo, if it has any.
-const image = project.image ?? project.gallery[0];
+const image = coverOf(project);
 const shown = image?.sizes.large ?? image;
 const Title = heading ?? 'span';
 ---

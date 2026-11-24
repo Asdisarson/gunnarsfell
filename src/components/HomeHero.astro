@@ -1,11 +1,12 @@
 ---
 // Home page opening: one finished project at a time, full width, behind the introduction.
 // src/scripts/site.ts changes the photo; without scripts the first project simply stays.
+import { coverOf } from '../lib/projects';
 import type { Project } from '../lib/wp';
 import { COMPANY } from '../site';
 
 interface Props {
-  /** Projects to show, each with a cover photo. The first one is on screen when the page opens. */
+  /** Projects to show, each with at least one photo. The first one is on screen when the page opens. */
   projects: Project[];
 }
 
@@ -15,7 +16,7 @@ const { projects } = Astro.props;
 <section class="gf-hero" aria-labelledby="gf-hero-title" data-hero>
   <div class="gf-hero__slides" aria-hidden="true">
     {projects.map((project, i) => {
-      const image = project.image!;
+      const image = coverOf(project)!;
       return (
         // Later photos stay out of the page (hidden) until the first one has loaded.
         <div class:list={['gf-hero__slide', i === 0 && 'is-active']} hidden={i > 0} data-hero-slide>

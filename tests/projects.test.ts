@@ -13,7 +13,7 @@ const image = {
   srcset: '',
   sizes: {},
 } satisfies WpImage;
-const project = (slug: string, photos: number, cover: WpImage | null = image): Project => ({
+const project = (slug: string, photos: number, cover: WpImage | null = image, featured = false): Project => ({
   id: 1,
   slug,
   path: `/verk/${slug}/`,
@@ -23,23 +23,46 @@ const project = (slug: string, photos: number, cover: WpImage | null = image): P
   image: cover,
   seo: null,
   description: '',
+  featured,
   gallery: Array.from({ length: photos }, () => image),
 });
 
 describe('featuredProjects', () => {
-  const verk = [project('two', 2), project('nine', 9), project('no-cover', 30, null), project('five', 5)];
+  const verk = [project('two', 2), project('nine', 9), project('no-photos', 0, null), project('five', 5)];
 
   it('puts the projects with the most photos first and stops at the count', () => {
     expect(featuredProjects(verk, 2).map((p) => p.slug)).toEqual(['nine', 'five']);
   });
 
-  it('leaves out projects without a cover photo', () => {
+  it('leaves out projects without any photo', () => {
     expect(featuredProjects(verk, 10).map((p) => p.slug)).toEqual(['nine', 'five', 'two']);
   });
 
   it('does not reorder the list it was given', () => {
     featuredProjects(verk, 2);
     expect(verk[0].slug).toBe('two');
+  });
+});
+
+describe('featuredProjects with projects the client chose', () => {
+  const verk = [
+    project('big', 9),
+    project('chosen-small', 1, image, true),
+    project('mid', 5),
+    project('chosen-b', 3, image, true),
+  ];
+
+  it('puts the chosen projects first, in the order they are listed, then fills up by photo count', () => {
+    expect(featuredProjects(verk, 3).map((p) => p.slug)).toEqual(['chosen-small', 'chosen-b', 'big']);
+  });
+
+  it('keeps to the count when more are chosen than fit', () => {
+    expect(featuredProjects(verk, 1).map((p) => p.slug)).toEqual(['chosen-small']);
+  });
+
+  it('accepts a chosen project that has photos but no cover, and skips one with no photos at all', () => {
+    const list = [project('no-cover', 2, null, true), project('empty', 0, null, true), project('plain', 4)];
+    expect(featuredProjects(list, 3).map((p) => p.slug)).toEqual(['no-cover', 'plain']);
   });
 });
 

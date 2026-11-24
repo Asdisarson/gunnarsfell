@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 const GF_REST_NS        = 'gunnarsfell/v1';
 const GF_GALLERY_FIELD  = 'myndir';
+const GF_FEATURED_FIELD = 'a_forsidu';
 const GF_CONTENT_TYPES  = array( 'verk', 'umsogn' );
 const GF_CONTACT_FORM   = 1043; // WPForms "Hafa Samband": source of recipient and subject.
 const GF_RATE_LIMIT     = 5;    // Contact submissions per IP per hour.
@@ -194,6 +195,7 @@ function gf_rest_content(): WP_REST_Response {
 		return gf_entry( $post ) + array(
 			'description' => (string) get_post_meta( $post->ID, 'lysing', true ),
 			'gallery'     => $gallery,
+			'featured'    => (bool) get_post_meta( $post->ID, GF_FEATURED_FIELD, true ),
 		);
 	}, $query( 'verk' ) );
 
@@ -236,6 +238,24 @@ add_action( 'acf/init', function () {
 			'rows'         => 3,
 			'new_lines'    => '',
 			'instructions' => 'Ein eða tvær setningar um verkið. Má sleppa.',
+		) ),
+	) );
+	// The client picks which projects open the home page; the front end fills any free spots itself.
+	acf_add_local_field_group( array(
+		'key'        => 'group_gf_verk_forsida',
+		'title'      => 'Forsíða',
+		'position'   => 'side',
+		'menu_order' => 6,
+		'location'   => array( array( array( 'param' => 'post_type', 'operator' => '==', 'value' => 'verk' ) ) ),
+		'fields'     => array( array(
+			'key'          => 'field_gf_verk_a_forsidu',
+			'name'         => GF_FEATURED_FIELD,
+			'label'        => 'Sýna á forsíðu',
+			'type'         => 'true_false',
+			'ui'           => 1,
+			'ui_on_text'   => 'Já',
+			'ui_off_text'  => 'Nei',
+			'instructions' => 'Verkið birtist í stóru myndunum efst á forsíðunni. Þar er pláss fyrir fimm verk; ef færri eru valin fyllir vefurinn upp með þeim verkum sem hafa flestar myndir.',
 		) ),
 	) );
 } );
@@ -381,12 +401,25 @@ add_action( 'admin_head', function () {
 
 // Cover thumbnail in the project list, so the client sees what is on the site; plugin columns go.
 add_filter( 'manage_verk_posts_columns', function ( array $columns ) {
-	$columns = array_slice( $columns, 0, 1, true ) + array( 'gf_cover' => 'Mynd' ) + $columns;
-	return gf_simple_admin() ? array_intersect_key( $columns, array_flip( array( 'cb', 'gf_cover', 'title', 'date' ) ) ) : $columns;
+	$columns = array_slice( $columns, 0, 1, true ) + array( 'gf_cover' => 'Mynd' ) + $columns + array( 'gf_featured' => 'Á forsíðu' );
+	if ( ! gf_simple_admin() ) {
+		return $columns;
+	}
+	// Only these, in this order.
+	$kept = array();
+	foreach ( array( 'cb', 'gf_cover', 'title', 'gf_featured', 'date' ) as $key ) {
+		if ( isset( $columns[ $key ] ) ) {
+			$kept[ $key ] = $columns[ $key ];
+		}
+	}
+	return $kept;
 }, 9999 );
 add_action( 'manage_verk_posts_custom_column', function ( string $column, int $post_id ) {
 	if ( 'gf_cover' === $column ) {
 		echo get_the_post_thumbnail( $post_id, array( 60, 60 ) ) ?: '—';
+	}
+	if ( 'gf_featured' === $column ) {
+		echo get_post_meta( $post_id, GF_FEATURED_FIELD, true ) ? 'Já' : '—';
 	}
 }, 10, 2 );
 
